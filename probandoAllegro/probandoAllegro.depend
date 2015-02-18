@@ -338,3 +338,78 @@
 1424050086 c:\users\edwin\documents\clases unitec\programacion 3\probandoallegro\fadeanimation.h
 	"Animation.h"
 
+1424050086 source:c:\users\edwin\documents\clases unitec\programacion 3\projectoprogra\platformer\probandoallegro\fadeanimation.cpp
+	"FadeAnimation.h"
+
+1424050086 c:\users\edwin\documents\clases unitec\programacion 3\projectoprogra\platformer\probandoallegro\fadeanimation.h
+	"Animation.h"
+
+1424223649 c:\users\edwin\documents\clases unitec\programacion 3\projectoprogra\platformer\probandoallegro\animation.h
+	<allegro5/allegro.h>
+	<allegro5/allegro_image.h>
+	<allegro5/allegro_font.h>
+	<allegro5/allegro_ttf.h>
+	<string>
+	"InputManager.h"
+
+1424223538 c:\users\edwin\documents\clases unitec\programacion 3\projectoprogra\platformer\probandoallegro\inputmanager.h
+	<allegro5/allegro.h>
+	<allegro5/keyboard.h>
+	<vector>
+
+1424050618 source:c:\users\edwin\documents\clases unitec\programacion 3\projectoprogra\platformer\probandoallegro\gamescreen.cpp
+	"GameScreen.h"
+
+1424050618 c:\users\edwin\documents\clases unitec\programacion 3\projectoprogra\platformer\probandoallegro\gamescreen.h
+	<allegro5/allegro.h>
+	"InputManager.h"
+
+1423987674 source:c:\users\edwin\documents\clases unitec\programacion 3\projectoprogra\platformer\probandoallegro\inputmanager.cpp
+	"InputManager.h"
+
+1424030175 source:c:\users\edwin\documents\clases unitec\programacion 3\projectoprogra\platformer\probandoallegro\main.cpp
+	<iostream>
+	<fstream>
+	"allegro5/allegro.h"
+	"allegro5/allegro_image.h"
+	"allegro5/allegro_primitives.h"
+	"allegro5/allegro_font.h"
+	"allegro5/allegro_ttf.h"
+	"allegro5/allegro_acodec.h"
+	"allegro5/allegro_native_dialog.h"
+	"ScreenManager.h"
+	"InputManager.h"
+
+1424050692 c:\users\edwin\documents\clases unitec\programacion 3\projectoprogra\platformer\probandoallegro\screenmanager.h
+	"allegro5/allegro.h"
+	"allegro5/allegro_image.h"
+	"GameScreen.h"
+	"SplashScreen.h"
+	"TitleScreen.h"
+	"FadeAnimation.h"
+
+1424030819 c:\users\edwin\documents\clases unitec\programacion 3\projectoprogra\platformer\probandoallegro\splashscreen.h
+	<allegro5/allegro_font.h>
+	<allegro5/allegro_ttf.h>
+	"ScreenManager.h"
+	"InputManager.h"
+	"TitleScreen.h"
+
+1424029076 c:\users\edwin\documents\clases unitec\programacion 3\projectoprogra\platformer\probandoallegro\titlescreen.h
+	<allegro5/allegro_font.h>
+	<allegro5/allegro_ttf.h>
+	"ScreenManager.h"
+	"InputManager.h"
+
+1424050692 source:c:\users\edwin\documents\clases unitec\programacion 3\projectoprogra\platformer\probandoallegro\screenmanager.cpp
+	"ScreenManager.h"
+
+1424030850 source:c:\users\edwin\documents\clases unitec\programacion 3\projectoprogra\platformer\probandoallegro\splashscreen.cpp
+	"SplashScreen.h"
+
+1424030856 source:c:\users\edwin\documents\clases unitec\programacion 3\projectoprogra\platformer\probandoallegro\titlescreen.cpp
+	"TitleScreen.h"
+
+1424223470 source:c:\users\edwin\documents\clases unitec\programacion 3\projectoprogra\platformer\probandoallegro\animation.cpp
+	"Animation.h"
+
