@@ -8,17 +8,18 @@
 #include "InputManager.h"
 #include "TitleScreen.h"
 
-class SplashScreen : public GameScreen {
- public:
-  SplashScreen();
-  ~SplashScreen();
-  void LoadContent();
-  void UnloadContent();
-  void Update(ALLEGRO_EVENT ev);
-  void Draw(ALLEGRO_DISPLAY *display);
+class SplashScreen : public GameScreen
+{
+    public:
+        SplashScreen();
+        ~SplashScreen();
+        void LoadContent();
+        void UnloadContent();
+        void Update(ALLEGRO_EVENT ev);
+        void Draw(ALLEGRO_DISPLAY *display);
 
- private:
-  ALLEGRO_FONT *font;
+    private:
+        ALLEGRO_FONT *font;
 };
 
 #endif // SPLASHSCREEN_H

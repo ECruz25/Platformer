@@ -3,19 +3,22 @@
 
 #include "Animation.h"
 
-class FadeAnimation : public Animation {
- public:
-  FadeAnimation();
-  ~FadeAnimation();
+using namespace std;
 
-  void LoadContent(ALLEGRO_BITMAP *image, std::string text, float position[2]);
-  void UnloadContent();
-  void Update(InputManager input);
-  void SetAlpha(float value);
+class FadeAnimation : public Animation
+{
+public:
+    FadeAnimation();
+    ~FadeAnimation();
 
- private:
-  float fade_speed;
-  bool increase;
+    void LoadContent(ALLEGRO_BITMAP *image, string text, float position[2]);
+    void UnloadContent();
+    void Update(InputManager input);
+    void SetAlpha(float value);
+
+private:
+    float fade_speed;
+    bool increase;
 };
 
 #endif // FADEANIMATION_H

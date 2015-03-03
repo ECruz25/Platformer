@@ -413,3 +413,78 @@
 1424223470 source:c:\users\edwin\documents\clases unitec\programacion 3\projectoprogra\platformer\probandoallegro\animation.cpp
 	"Animation.h"
 
+1425346391 source:/home/edwin/Platformer/probandoAllegro/Animation.cpp
+	"Animation.h"
+
+1425346547 /home/edwin/Platformer/probandoAllegro/Animation.h
+	<allegro5/allegro.h>
+	<allegro5/allegro_image.h>
+	<allegro5/allegro_font.h>
+	<allegro5/allegro_ttf.h>
+	<string>
+	"InputManager.h"
+
+1425344702 /home/edwin/Platformer/probandoAllegro/InputManager.h
+	<allegro5/allegro.h>
+	<allegro5/keyboard.h>
+	<vector>
+
+1425339976 source:/home/edwin/Platformer/probandoAllegro/FadeAnimation.cpp
+	"FadeAnimation.h"
+
+1425346547 /home/edwin/Platformer/probandoAllegro/FadeAnimation.h
+	"Animation.h"
+
+1425339976 source:/home/edwin/Platformer/probandoAllegro/GameScreen.cpp
+	"GameScreen.h"
+
+1425342582 /home/edwin/Platformer/probandoAllegro/GameScreen.h
+	<allegro5/allegro.h>
+	"InputManager.h"
+
+1425344855 source:/home/edwin/Platformer/probandoAllegro/InputManager.cpp
+	"InputManager.h"
+
+1425345869 source:/home/edwin/Platformer/probandoAllegro/main.cpp
+	<iostream>
+	<fstream>
+	"allegro5/allegro.h"
+	"allegro5/allegro_image.h"
+	"allegro5/allegro_primitives.h"
+	"allegro5/allegro_font.h"
+	"allegro5/allegro_ttf.h"
+	"allegro5/allegro_acodec.h"
+	"allegro5/allegro_native_dialog.h"
+	"ScreenManager.h"
+	"InputManager.h"
+
+1425345491 /home/edwin/Platformer/probandoAllegro/ScreenManager.h
+	"allegro5/allegro.h"
+	"allegro5/allegro_image.h"
+	"GameScreen.h"
+	"SplashScreen.h"
+	"TitleScreen.h"
+	"FadeAnimation.h"
+
+1425346031 /home/edwin/Platformer/probandoAllegro/SplashScreen.h
+	<allegro5/allegro_font.h>
+	<allegro5/allegro_ttf.h>
+	"ScreenManager.h"
+	"InputManager.h"
+	"TitleScreen.h"
+
+1425346031 /home/edwin/Platformer/probandoAllegro/TitleScreen.h
+	<allegro5/allegro_font.h>
+	<allegro5/allegro_ttf.h>
+	"ScreenManager.h"
+	"InputManager.h"
+
+1425345726 source:/home/edwin/Platformer/probandoAllegro/ScreenManager.cpp
+	"ScreenManager.h"
+
+1425345520 source:/home/edwin/Platformer/probandoAllegro/SplashScreen.cpp
+	"SplashScreen.h"
+
+1425345726 source:/home/edwin/Platformer/probandoAllegro/TitleScreen.cpp
+	"TitleScreen.h"
+

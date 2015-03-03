@@ -9,27 +9,30 @@
 
 #include "InputManager.h"
 
-class Animation {
- public:
-  Animation();
-  ~Animation();
+using namespace std;
 
-  virtual void LoadContent(ALLEGRO_BITMAP *image, std::string text, float position[2]);
-  virtual void UnloadContent();
-  virtual void Update(InputManager input);
-  void Draw(ALLEGRO_DISPLAY *display);
-  void SetIsActive(bool value);
-  virtual void SetAlpha(float value);
-  float GetAlpha();
-  bool GetIsActive();
+class Animation
+{
+    public:
+        Animation();
+        ~Animation();
 
- protected:
-  ALLEGRO_BITMAP *image, *SourceRect;
-  std::string text;
-  ALLEGRO_FONT *font;
-  float position[2];
-  float alpha;
-  bool is_active;
+        virtual void LoadContent(ALLEGRO_BITMAP *image, string text, float position[2]);
+        virtual void UnloadContent();
+        virtual void Update(InputManager input);
+        void Draw(ALLEGRO_DISPLAY *display);
+        void SetIsActive(bool value);
+        virtual void SetAlpha(float value);
+        float GetAlpha();
+        bool GetIsActive();
+
+    protected:
+        ALLEGRO_BITMAP *image, *source_rect;
+        ALLEGRO_FONT *font;
+        std::string text;
+        float position[2];
+        float alpha;
+        bool is_active;
 };
 
 #endif // ANIMATION_H

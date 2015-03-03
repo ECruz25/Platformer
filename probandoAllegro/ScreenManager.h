@@ -9,25 +9,28 @@
 #include "TitleScreen.h"
 #include "FadeAnimation.h"
 
-class ScreenManager {
- public:
-  ~ScreenManager();
-  static ScreenManager &GetInstance();
-  void Initialize();
-  void LoadContent();
-  void UnloadContent();
-  void Update(ALLEGRO_EVENT ev);
-  void Draw(ALLEGRO_DISPLAY *display);
-  void AddScreen(GameScreen *screen);
- private:
-  ScreenManager();
-  ScreenManager(ScreenManager const&);
-  void operator = (ScreenManager const&);
-  void Transition();
-  GameScreen *CurrentScreen, *NewScreen;
-  ALLEGRO_BITMAP *transition_image;
-  FadeAnimation transition;
-  bool start_transition;
+class ScreenManager
+{
+    public:
+        ~ScreenManager();
+        static ScreenManager &GetInstance();
+        void Initialize();
+        void LoadContent();
+        void UnloadContent();
+        void Update(ALLEGRO_EVENT ev);
+        void Draw(ALLEGRO_DISPLAY *display);
+        void AddScreen(GameScreen *screen);
+
+    private:
+        ScreenManager();
+        ScreenManager(ScreenManager const&);
+        void operator = (ScreenManager const&);
+        void Transition();
+        ALLEGRO_BITMAP *transition_image;
+        FadeAnimation transition;
+        bool start_transition;
+        GameScreen *CurrentScreen, *NewScreen;
+
 };
 
 #endif // SCREENMANAGER_H

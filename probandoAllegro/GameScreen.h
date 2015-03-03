@@ -5,19 +5,20 @@
 
 #include "InputManager.h"
 
-class GameScreen {
- public:
-  GameScreen();
-  ~GameScreen();
-  virtual void LoadContent();
-  virtual void UnloadContent();
-  virtual void Update(ALLEGRO_EVENT ev);
-  virtual void Draw(ALLEGRO_DISPLAY *display);
+class GameScreen
+{
+    public:
+        GameScreen();
+        ~GameScreen();
+        virtual void LoadContent();
+        virtual void UnloadContent();
+        virtual void Update(ALLEGRO_EVENT ev);
+        virtual void Draw(ALLEGRO_DISPLAY *display);
 
-  InputManager GetInput();
+        InputManager GetInput();
 
- protected:
-  InputManager input;
+    protected:
+        InputManager input;
 };
 
 #endif // GAMESCREEN_H

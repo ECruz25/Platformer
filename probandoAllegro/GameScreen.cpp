@@ -1,29 +1,36 @@
 #include "GameScreen.h"
 
-GameScreen::GameScreen() {
+GameScreen::GameScreen()
+{
     //ctor
 }
 
-GameScreen::~GameScreen() {
+GameScreen::~GameScreen()
+{
     //dtor
 }
 
-void GameScreen::LoadContent() {
+void GameScreen::LoadContent()
+{
 
 }
 
-void GameScreen::UnloadContent() {
+void GameScreen::UnloadContent()
+{
 
 }
 
-void GameScreen::Update(ALLEGRO_EVENT ev) {
+void GameScreen::Update(ALLEGRO_EVENT ev)
+{
 
 }
 
-void GameScreen::Draw(ALLEGRO_DISPLAY *display) {
+void GameScreen::Draw(ALLEGRO_DISPLAY *display)
+{
 
 }
 
-InputManager GameScreen::GetInput() {
-  return input;
+InputManager GameScreen::GetInput()
+{
+    return input;
 }
