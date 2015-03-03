@@ -12,7 +12,7 @@ TitleScreen::~TitleScreen()
 
 void TitleScreen::LoadContent()
 {
-    font = al_load_font("arial.ttf", 30, NULL);
+    font = al_load_font("assets/fonts/arial.ttf", 30, NULL);
 }
 
 void TitleScreen::UnloadContent()

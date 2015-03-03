@@ -413,7 +413,7 @@
 1424223470 source:c:\users\edwin\documents\clases unitec\programacion 3\projectoprogra\platformer\probandoallegro\animation.cpp
 	"Animation.h"
 
-1425346391 source:/home/edwin/Platformer/probandoAllegro/Animation.cpp
+1425348915 source:/home/edwin/Platformer/probandoAllegro/Animation.cpp
 	"Animation.h"
 
 1425346547 /home/edwin/Platformer/probandoAllegro/Animation.h
@@ -424,7 +424,7 @@
 	<string>
 	"InputManager.h"
 
-1425344702 /home/edwin/Platformer/probandoAllegro/InputManager.h
+1425346572 /home/edwin/Platformer/probandoAllegro/InputManager.h
 	<allegro5/allegro.h>
 	<allegro5/keyboard.h>
 	<vector>
@@ -445,7 +445,7 @@
 1425344855 source:/home/edwin/Platformer/probandoAllegro/InputManager.cpp
 	"InputManager.h"
 
-1425345869 source:/home/edwin/Platformer/probandoAllegro/main.cpp
+1425348687 source:/home/edwin/Platformer/probandoAllegro/main.cpp
 	<iostream>
 	<fstream>
 	"allegro5/allegro.h"
@@ -482,9 +482,9 @@
 1425345726 source:/home/edwin/Platformer/probandoAllegro/ScreenManager.cpp
 	"ScreenManager.h"
 
-1425345520 source:/home/edwin/Platformer/probandoAllegro/SplashScreen.cpp
+1425348384 source:/home/edwin/Platformer/probandoAllegro/SplashScreen.cpp
 	"SplashScreen.h"
 
-1425345726 source:/home/edwin/Platformer/probandoAllegro/TitleScreen.cpp
+1425348384 source:/home/edwin/Platformer/probandoAllegro/TitleScreen.cpp
 	"TitleScreen.h"
 
