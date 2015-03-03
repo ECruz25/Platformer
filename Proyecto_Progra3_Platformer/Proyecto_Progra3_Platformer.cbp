@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Proyecto_Progra3_Platformer" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/probandoAllegro" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add option="`pkg-config --cflags --libs allegro-5.0 allegro_primitives-5.0`" />
+					<Add option="-DALLEGRO_STATICLINK" />
+					<Add directory="../../../../../allegro-5.0.10-mingw-4.7.0/include" />
+					<Add directory="../../../../../allegro-5.0.10-mingw-4.7.0/lib" />
+				</Compiler>
+				<Linker>
+					<Add library="/home/edwin/allegro/build/lib/liballegro.so" />
+					<Add library="/home/edwin/allegro/build/lib/liballegro_acodec.so" />
+					<Add library="/home/edwin/allegro/build/lib/liballegro_audio.so" />
+					<Add library="/home/edwin/allegro/build/lib/liballegro_color.so" />
+					<Add library="/home/edwin/allegro/build/lib/liballegro_dialog.so" />
+					<Add library="/home/edwin/allegro/build/lib/liballegro_font.so" />
+					<Add library="/home/edwin/allegro/build/lib/liballegro_image.so" />
+					<Add library="/home/edwin/allegro/build/lib/liballegro_main.so" />
+					<Add library="/home/edwin/allegro/build/lib/liballegro_memfile.so" />
+					<Add library="/home/edwin/allegro/build/lib/liballegro_physfs.so" />
+					<Add library="/home/edwin/allegro/build/lib/liballegro_primitives.so" />
+					<Add library="/home/edwin/allegro/build/lib/liballegro_ttf.so" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/probandoAllegro" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add library="../../../../../../allegro-5.0.10-mingw-4.7.0/lib/liballegro-5.0.10-monolith-mt.a" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add directory="../../../allegro-5.0.10-mingw-4.7.0/include" />
+		</Compiler>
+		<Unit filename="Animation.cpp" />
+		<Unit filename="Animation.h" />
+		<Unit filename="FadeAnimation.cpp" />
+		<Unit filename="FadeAnimation.h" />
+		<Unit filename="FileManager.cpp" />
+		<Unit filename="FileManager.h" />
+		<Unit filename="GameScreen.cpp" />
+		<Unit filename="GameScreen.h" />
+		<Unit filename="InputManager.cpp" />
+		<Unit filename="InputManager.h" />
+		<Unit filename="ScreenManager.cpp" />
+		<Unit filename="ScreenManager.h" />
+		<Unit filename="SplashScreen.cpp" />
+		<Unit filename="SplashScreen.h" />
+		<Unit filename="TitleScreen.cpp" />
+		<Unit filename="TitleScreen.h" />
+		<Unit filename="main.cpp" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

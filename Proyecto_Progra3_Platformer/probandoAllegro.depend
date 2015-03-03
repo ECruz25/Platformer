@@ -1,0 +1,670 @@
+# depslib dependency file v1.0
+1424030175 source:c:\users\edwin\documents\clases unitec\programacion 3\probandoallegro\main.cpp
+	<iostream>
+	<fstream>
+	"allegro5/allegro.h"
+	"allegro5/allegro_image.h"
+	"allegro5/allegro_primitives.h"
+	"allegro5/allegro_font.h"
+	"allegro5/allegro_ttf.h"
+	"allegro5/allegro_acodec.h"
+	"allegro5/allegro_native_dialog.h"
+	"ScreenManager.h"
+	"InputManager.h"
+
+1372649932 c:\users\edwin\documents\allegro-5.0.10-mingw-4.7.0\include\allegro5\allegro.h
+	"allegro5/base.h"
+	"allegro5/altime.h"
+	"allegro5/bitmap.h"
+	"allegro5/bitmap_draw.h"
+	"allegro5/bitmap_io.h"
+	"allegro5/bitmap_lock.h"
+	"allegro5/blender.h"
+	"allegro5/color.h"
+	"allegro5/config.h"
+	"allegro5/debug.h"
+	"allegro5/display.h"
+	"allegro5/drawing.h"
+	"allegro5/error.h"
+	"allegro5/events.h"
+	"allegro5/file.h"
+	"allegro5/fixed.h"
+	"allegro5/fmaths.h"
+	"allegro5/fshook.h"
+	"allegro5/fullscreen_mode.h"
+	"allegro5/joystick.h"
+	"allegro5/keyboard.h"
+	"allegro5/memory.h"
+	"allegro5/monitor.h"
+	"allegro5/mouse.h"
+	"allegro5/mouse_cursor.h"
+	"allegro5/path.h"
+	"allegro5/system.h"
+	"allegro5/threads.h"
+	"allegro5/timer.h"
+	"allegro5/tls.h"
+	"allegro5/transformations.h"
+	"allegro5/utf8.h"
+	"allegro5/alcompat.h"
+
+1372649932 c:\users\edwin\documents\allegro-5.0.10-mingw-4.7.0\include\allegro5\base.h
+	<errno.h>
+	<limits.h>
+	<limits.h>
+	<stdarg.h>
+	<stddef.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	<sys/types.h>
+	<fortify/fortify.h>
+	<dmalloc.h>
+	"allegro5/internal/alconfig.h"
+
+1372649932 c:\users\edwin\documents\allegro-5.0.10-mingw-4.7.0\include\allegro5\internal\alconfig.h
+	"allegro5/platform/alplatf.h"
+	"allegro5/platform/alwatcom.h"
+	"allegro5/platform/almngw32.h"
+	"allegro5/platform/albcc32.h"
+	"allegro5/platform/almsvc.h"
+	"allegro5/platform/aliphonecfg.h"
+	"allegro5/platform/alosxcfg.h"
+	"allegro5/platform/alucfg.h"
+	"allegro5/platform/astdint.h"
+	"allegro5/platform/astdbool.h"
+
+1372651128 c:\users\edwin\documents\allegro-5.0.10-mingw-4.7.0\include\allegro5\platform\alplatf.h
+
+1368991508 c:\users\edwin\documents\allegro-5.0.10-mingw-4.7.0\include\allegro5\platform\alwatcom.h
+	<io.h>
+	<i86.h>
+	<conio.h>
+	<fcntl.h>
+	<direct.h>
+	<malloc.h>
+
+1368991508 c:\users\edwin\documents\allegro-5.0.10-mingw-4.7.0\include\allegro5\platform\almngw32.h
+	<io.h>
+	<fcntl.h>
+	<direct.h>
+	<malloc.h>
+	"allegro5/platform/alplatf.h"
+
+1368991508 c:\users\edwin\documents\allegro-5.0.10-mingw-4.7.0\include\allegro5\platform\albcc32.h
+	<io.h>
+	<fcntl.h>
+	<direct.h>
+	<malloc.h>
+
+1368991508 c:\users\edwin\documents\allegro-5.0.10-mingw-4.7.0\include\allegro5\platform\almsvc.h
+	<io.h>
+	<fcntl.h>
+	<direct.h>
+	<malloc.h>
+	"allegro5/platform/alplatf.h"
+
+1362349100 c:\users\edwin\documents\allegro-5.0.10-mingw-4.7.0\include\allegro5\platform\aliphonecfg.h
+	<fcntl.h>
+	<unistd.h>
+
+1368991508 c:\users\edwin\documents\allegro-5.0.10-mingw-4.7.0\include\allegro5\platform\alosxcfg.h
+	"allegro5/platform/alplatf.h"
+
+1368991508 c:\users\edwin\documents\allegro-5.0.10-mingw-4.7.0\include\allegro5\platform\alucfg.h
+	<fcntl.h>
+	<unistd.h>
+	"alunix.h"
+	"allegro5/platform/alplatf.h"
+
+1362349100 c:\users\edwin\documents\allegro-5.0.10-mingw-4.7.0\include\allegro5\platform\alunix.h
+
+1362349100 c:\users\edwin\documents\allegro-5.0.10-mingw-4.7.0\include\allegro5\platform\astdint.h
+	<inttypes.h>
+	<stdint.h>
+
+1362349100 c:\users\edwin\documents\allegro-5.0.10-mingw-4.7.0\include\allegro5\platform\astdbool.h
+	<stdbool.h>
+
+1362349100 c:\users\edwin\documents\allegro-5.0.10-mingw-4.7.0\include\allegro5\altime.h
+	"allegro5/base.h"
+
+1372649932 c:\users\edwin\documents\allegro-5.0.10-mingw-4.7.0\include\allegro5\bitmap.h
+	"allegro5/color.h"
+
+1372649932 c:\users\edwin\documents\allegro-5.0.10-mingw-4.7.0\include\allegro5\color.h
+	"allegro5/base.h"
+
+1362349100 c:\users\edwin\documents\allegro-5.0.10-mingw-4.7.0\include\allegro5\bitmap_draw.h
+	"allegro5/bitmap.h"
+
+1372649932 c:\users\edwin\documents\allegro-5.0.10-mingw-4.7.0\include\allegro5\bitmap_io.h
+	"allegro5/bitmap.h"
+	"allegro5/file.h"
+
+1362349100 c:\users\edwin\documents\allegro-5.0.10-mingw-4.7.0\include\allegro5\file.h
+	"allegro5/base.h"
+	"allegro5/path.h"
+	"allegro5/utf8.h"
+
+1362349100 c:\users\edwin\documents\allegro-5.0.10-mingw-4.7.0\include\allegro5\path.h
+	"allegro5/base.h"
+
+1362349100 c:\users\edwin\documents\allegro-5.0.10-mingw-4.7.0\include\allegro5\utf8.h
+	"allegro5/base.h"
+
+1362349100 c:\users\edwin\documents\allegro-5.0.10-mingw-4.7.0\include\allegro5\bitmap_lock.h
+	"allegro5/bitmap.h"
+
+1372649884 c:\users\edwin\documents\allegro-5.0.10-mingw-4.7.0\include\allegro5\blender.h
+
+1372649932 c:\users\edwin\documents\allegro-5.0.10-mingw-4.7.0\include\allegro5\config.h
+	"allegro5/file.h"
+
+1372649932 c:\users\edwin\documents\allegro-5.0.10-mingw-4.7.0\include\allegro5\debug.h
+	<assert.h>
+	"allegro5/base.h"
+
+1372649932 c:\users\edwin\documents\allegro-5.0.10-mingw-4.7.0\include\allegro5\display.h
+	"allegro5/bitmap.h"
+	"allegro5/color.h"
+	"allegro5/events.h"
+
+1372649932 c:\users\edwin\documents\allegro-5.0.10-mingw-4.7.0\include\allegro5\events.h
+	"allegro5/altime.h"
+
+1372649932 c:\users\edwin\documents\allegro-5.0.10-mingw-4.7.0\include\allegro5\drawing.h
+	"allegro5/color.h"
+
+1362349100 c:\users\edwin\documents\allegro-5.0.10-mingw-4.7.0\include\allegro5\error.h
+	"allegro5/base.h"
+
+1362349100 c:\users\edwin\documents\allegro-5.0.10-mingw-4.7.0\include\allegro5\fixed.h
+	"allegro5/base.h"
+
+1362349100 c:\users\edwin\documents\allegro-5.0.10-mingw-4.7.0\include\allegro5\fmaths.h
+	"allegro5/base.h"
+	"allegro5/fixed.h"
+	"allegro5/inline/fmaths.inl"
+
+1368991508 c:\users\edwin\documents\allegro-5.0.10-mingw-4.7.0\include\allegro5\inline\fmaths.inl
+	"allegro5/error.h"
+
+1362349100 c:\users\edwin\documents\allegro-5.0.10-mingw-4.7.0\include\allegro5\fshook.h
+	"allegro5/base.h"
+	"allegro5/file.h"
+	"allegro5/path.h"
+	<sys/types.h>
+
+1362349100 c:\users\edwin\documents\allegro-5.0.10-mingw-4.7.0\include\allegro5\fullscreen_mode.h
+
+1372649932 c:\users\edwin\documents\allegro-5.0.10-mingw-4.7.0\include\allegro5\joystick.h
+	"allegro5/base.h"
+	"allegro5/events.h"
+
+1362349100 c:\users\edwin\documents\allegro-5.0.10-mingw-4.7.0\include\allegro5\keyboard.h
+	"allegro5/base.h"
+	"allegro5/events.h"
+	"allegro5/keycodes.h"
+
+1372649932 c:\users\edwin\documents\allegro-5.0.10-mingw-4.7.0\include\allegro5\keycodes.h
+
+1362349100 c:\users\edwin\documents\allegro-5.0.10-mingw-4.7.0\include\allegro5\memory.h
+
+1362349100 c:\users\edwin\documents\allegro-5.0.10-mingw-4.7.0\include\allegro5\monitor.h
+
+1362349100 c:\users\edwin\documents\allegro-5.0.10-mingw-4.7.0\include\allegro5\mouse.h
+	"allegro5/base.h"
+	"allegro5/events.h"
+
+1362349100 c:\users\edwin\documents\allegro-5.0.10-mingw-4.7.0\include\allegro5\mouse_cursor.h
+	"allegro5/base.h"
+
+1362349100 c:\users\edwin\documents\allegro-5.0.10-mingw-4.7.0\include\allegro5\system.h
+	"allegro5/config.h"
+	"allegro5/path.h"
+
+1362349100 c:\users\edwin\documents\allegro-5.0.10-mingw-4.7.0\include\allegro5\threads.h
+	"allegro5/altime.h"
+
+1362349100 c:\users\edwin\documents\allegro-5.0.10-mingw-4.7.0\include\allegro5\timer.h
+	"allegro5/base.h"
+
+1362349100 c:\users\edwin\documents\allegro-5.0.10-mingw-4.7.0\include\allegro5\tls.h
+	"allegro5/base.h"
+
+1372649932 c:\users\edwin\documents\allegro-5.0.10-mingw-4.7.0\include\allegro5\transformations.h
+	"allegro5/display.h"
+
+1372649932 c:\users\edwin\documents\allegro-5.0.10-mingw-4.7.0\include\allegro5\alcompat.h
+
+1362349100 c:\users\edwin\documents\allegro-5.0.10-mingw-4.7.0\include\allegro5\allegro_image.h
+
+1372649932 c:\users\edwin\documents\allegro-5.0.10-mingw-4.7.0\include\allegro5\allegro_primitives.h
+	<allegro5/allegro.h>
+
+1372649932 c:\users\edwin\documents\allegro-5.0.10-mingw-4.7.0\include\allegro5\allegro_font.h
+	"allegro5/allegro.h"
+
+1362349100 c:\users\edwin\documents\allegro-5.0.10-mingw-4.7.0\include\allegro5\allegro_ttf.h
+	"allegro5/allegro.h"
+	"allegro5/allegro_font.h"
+
+1423408491 c:\users\edwin\documents\clases unitec\programacion 3\probandoallegro\player.h
+	"allegro5/allegro.h"
+	"allegro5/allegro_image.h"
+	<vector>
+
+1423408481 c:\users\edwin\documents\clases unitec\programacion 3\probandoallegro\platform.h
+	"allegro5/allegro.h"
+	"allegro5/allegro_image.h"
+	<vector>
+
+1423408559 source:c:\users\edwin\documents\clases unitec\programacion 3\probandoallegro\platform.cpp
+	"Platform.h"
+
+1423415172 source:c:\users\edwin\documents\clases unitec\programacion 3\probandoallegro\player.cpp
+	<iostream>
+	"Player.h"
+
+1424050692 c:\users\edwin\documents\clases unitec\programacion 3\probandoallegro\screenmanager.h
+	"allegro5/allegro.h"
+	"allegro5/allegro_image.h"
+	"GameScreen.h"
+	"SplashScreen.h"
+	"TitleScreen.h"
+	"FadeAnimation.h"
+
+1424050692 source:c:\users\edwin\documents\clases unitec\programacion 3\probandoallegro\screenmanager.cpp
+	"ScreenManager.h"
+
+1424050618 source:c:\users\edwin\documents\clases unitec\programacion 3\probandoallegro\gamescreen.cpp
+	"GameScreen.h"
+
+1424050618 c:\users\edwin\documents\clases unitec\programacion 3\probandoallegro\gamescreen.h
+	<allegro5/allegro.h>
+	"InputManager.h"
+
+1424030819 c:\users\edwin\documents\clases unitec\programacion 3\probandoallegro\splashscreen.h
+	<allegro5/allegro_font.h>
+	<allegro5/allegro_ttf.h>
+	"ScreenManager.h"
+	"InputManager.h"
+	"TitleScreen.h"
+
+1424030850 source:c:\users\edwin\documents\clases unitec\programacion 3\probandoallegro\splashscreen.cpp
+	"SplashScreen.h"
+
+1362349100 c:\users\edwin\documents\allegro-5.0.10-mingw-4.7.0\include\allegro5\allegro_acodec.h
+	"allegro5/allegro.h"
+	"allegro5/allegro_audio.h"
+
+1372649932 c:\users\edwin\documents\allegro-5.0.10-mingw-4.7.0\include\allegro5\allegro_audio.h
+	"allegro5/allegro.h"
+
+1423987674 source:c:\users\edwin\documents\clases unitec\programacion 3\probandoallegro\inputmanager.cpp
+	"InputManager.h"
+
+1423989114 c:\users\edwin\documents\clases unitec\programacion 3\probandoallegro\inputmanager.h
+	<allegro5/allegro.h>
+	<allegro5/keyboard.h>
+	<vector>
+
+1424030856 source:c:\users\edwin\documents\clases unitec\programacion 3\probandoallegro\titlescreen.cpp
+	"TitleScreen.h"
+
+1424029076 c:\users\edwin\documents\clases unitec\programacion 3\probandoallegro\titlescreen.h
+	<allegro5/allegro_font.h>
+	<allegro5/allegro_ttf.h>
+	"ScreenManager.h"
+	"InputManager.h"
+
+1372649932 c:\users\edwin\documents\allegro-5.0.10-mingw-4.7.0\include\allegro5\allegro_native_dialog.h
+	"allegro5/allegro.h"
+
+1424049694 source:c:\users\edwin\documents\clases unitec\programacion 3\probandoallegro\animation.cpp
+	"Animation.h"
+
+1424050865 c:\users\edwin\documents\clases unitec\programacion 3\probandoallegro\animation.h
+	<allegro5/allegro.h>
+	<allegro5/allegro_image.h>
+	<allegro5/allegro_font.h>
+	<allegro5/allegro_ttf.h>
+	<string>
+	"InputManager.h"
+
+1424050086 source:c:\users\edwin\documents\clases unitec\programacion 3\probandoallegro\fadeanimation.cpp
+	"FadeAnimation.h"
+
+1424050086 c:\users\edwin\documents\clases unitec\programacion 3\probandoallegro\fadeanimation.h
+	"Animation.h"
+
+1424050086 source:c:\users\edwin\documents\clases unitec\programacion 3\projectoprogra\platformer\probandoallegro\fadeanimation.cpp
+	"FadeAnimation.h"
+
+1424050086 c:\users\edwin\documents\clases unitec\programacion 3\projectoprogra\platformer\probandoallegro\fadeanimation.h
+	"Animation.h"
+
+1424223649 c:\users\edwin\documents\clases unitec\programacion 3\projectoprogra\platformer\probandoallegro\animation.h
+	<allegro5/allegro.h>
+	<allegro5/allegro_image.h>
+	<allegro5/allegro_font.h>
+	<allegro5/allegro_ttf.h>
+	<string>
+	"InputManager.h"
+
+1424223538 c:\users\edwin\documents\clases unitec\programacion 3\projectoprogra\platformer\probandoallegro\inputmanager.h
+	<allegro5/allegro.h>
+	<allegro5/keyboard.h>
+	<vector>
+
+1424050618 source:c:\users\edwin\documents\clases unitec\programacion 3\projectoprogra\platformer\probandoallegro\gamescreen.cpp
+	"GameScreen.h"
+
+1424050618 c:\users\edwin\documents\clases unitec\programacion 3\projectoprogra\platformer\probandoallegro\gamescreen.h
+	<allegro5/allegro.h>
+	"InputManager.h"
+
+1423987674 source:c:\users\edwin\documents\clases unitec\programacion 3\projectoprogra\platformer\probandoallegro\inputmanager.cpp
+	"InputManager.h"
+
+1424030175 source:c:\users\edwin\documents\clases unitec\programacion 3\projectoprogra\platformer\probandoallegro\main.cpp
+	<iostream>
+	<fstream>
+	"allegro5/allegro.h"
+	"allegro5/allegro_image.h"
+	"allegro5/allegro_primitives.h"
+	"allegro5/allegro_font.h"
+	"allegro5/allegro_ttf.h"
+	"allegro5/allegro_acodec.h"
+	"allegro5/allegro_native_dialog.h"
+	"ScreenManager.h"
+	"InputManager.h"
+
+1424050692 c:\users\edwin\documents\clases unitec\programacion 3\projectoprogra\platformer\probandoallegro\screenmanager.h
+	"allegro5/allegro.h"
+	"allegro5/allegro_image.h"
+	"GameScreen.h"
+	"SplashScreen.h"
+	"TitleScreen.h"
+	"FadeAnimation.h"
+
+1424030819 c:\users\edwin\documents\clases unitec\programacion 3\projectoprogra\platformer\probandoallegro\splashscreen.h
+	<allegro5/allegro_font.h>
+	<allegro5/allegro_ttf.h>
+	"ScreenManager.h"
+	"InputManager.h"
+	"TitleScreen.h"
+
+1424029076 c:\users\edwin\documents\clases unitec\programacion 3\projectoprogra\platformer\probandoallegro\titlescreen.h
+	<allegro5/allegro_font.h>
+	<allegro5/allegro_ttf.h>
+	"ScreenManager.h"
+	"InputManager.h"
+
+1424050692 source:c:\users\edwin\documents\clases unitec\programacion 3\projectoprogra\platformer\probandoallegro\screenmanager.cpp
+	"ScreenManager.h"
+
+1424030850 source:c:\users\edwin\documents\clases unitec\programacion 3\projectoprogra\platformer\probandoallegro\splashscreen.cpp
+	"SplashScreen.h"
+
+1424030856 source:c:\users\edwin\documents\clases unitec\programacion 3\projectoprogra\platformer\probandoallegro\titlescreen.cpp
+	"TitleScreen.h"
+
+1424223470 source:c:\users\edwin\documents\clases unitec\programacion 3\projectoprogra\platformer\probandoallegro\animation.cpp
+	"Animation.h"
+
+1425348915 source:/home/edwin/Platformer/probandoAllegro/Animation.cpp
+	"Animation.h"
+
+1425346547 /home/edwin/Platformer/probandoAllegro/Animation.h
+	<allegro5/allegro.h>
+	<allegro5/allegro_image.h>
+	<allegro5/allegro_font.h>
+	<allegro5/allegro_ttf.h>
+	<string>
+	"InputManager.h"
+
+1425346572 /home/edwin/Platformer/probandoAllegro/InputManager.h
+	<allegro5/allegro.h>
+	<allegro5/keyboard.h>
+	<vector>
+
+1425339976 source:/home/edwin/Platformer/probandoAllegro/FadeAnimation.cpp
+	"FadeAnimation.h"
+
+1425346547 /home/edwin/Platformer/probandoAllegro/FadeAnimation.h
+	"Animation.h"
+
+1425339976 source:/home/edwin/Platformer/probandoAllegro/GameScreen.cpp
+	"GameScreen.h"
+
+1425342582 /home/edwin/Platformer/probandoAllegro/GameScreen.h
+	<allegro5/allegro.h>
+	"InputManager.h"
+
+1425344855 source:/home/edwin/Platformer/probandoAllegro/InputManager.cpp
+	"InputManager.h"
+
+1425348687 source:/home/edwin/Platformer/probandoAllegro/main.cpp
+	<iostream>
+	<fstream>
+	"allegro5/allegro.h"
+	"allegro5/allegro_image.h"
+	"allegro5/allegro_primitives.h"
+	"allegro5/allegro_font.h"
+	"allegro5/allegro_ttf.h"
+	"allegro5/allegro_acodec.h"
+	"allegro5/allegro_native_dialog.h"
+	"ScreenManager.h"
+	"InputManager.h"
+
+1425345491 /home/edwin/Platformer/probandoAllegro/ScreenManager.h
+	"allegro5/allegro.h"
+	"allegro5/allegro_image.h"
+	"GameScreen.h"
+	"SplashScreen.h"
+	"TitleScreen.h"
+	"FadeAnimation.h"
+
+1425346031 /home/edwin/Platformer/probandoAllegro/SplashScreen.h
+	<allegro5/allegro_font.h>
+	<allegro5/allegro_ttf.h>
+	"ScreenManager.h"
+	"InputManager.h"
+	"TitleScreen.h"
+
+1425346031 /home/edwin/Platformer/probandoAllegro/TitleScreen.h
+	<allegro5/allegro_font.h>
+	<allegro5/allegro_ttf.h>
+	"ScreenManager.h"
+	"InputManager.h"
+
+1425345726 source:/home/edwin/Platformer/probandoAllegro/ScreenManager.cpp
+	"ScreenManager.h"
+
+1425348384 source:/home/edwin/Platformer/probandoAllegro/SplashScreen.cpp
+	"SplashScreen.h"
+
+1425348384 source:/home/edwin/Platformer/probandoAllegro/TitleScreen.cpp
+	"TitleScreen.h"
+
+1425373342 source:/home/edwin/Documents/Platformer/probandoAllegro/Animation.cpp
+	"Animation.h"
+
+1425373342 /home/edwin/Documents/Platformer/probandoAllegro/Animation.h
+	<allegro5/allegro.h>
+	<allegro5/allegro_image.h>
+	<allegro5/allegro_font.h>
+	<allegro5/allegro_ttf.h>
+	<string>
+	"InputManager.h"
+
+1425373342 /home/edwin/Documents/Platformer/probandoAllegro/InputManager.h
+	<allegro5/allegro.h>
+	<allegro5/keyboard.h>
+	<vector>
+
+1425373342 source:/home/edwin/Documents/Platformer/probandoAllegro/FadeAnimation.cpp
+	"FadeAnimation.h"
+
+1425373342 /home/edwin/Documents/Platformer/probandoAllegro/FadeAnimation.h
+	"Animation.h"
+
+1425373342 source:/home/edwin/Documents/Platformer/probandoAllegro/GameScreen.cpp
+	"GameScreen.h"
+
+1425373342 /home/edwin/Documents/Platformer/probandoAllegro/GameScreen.h
+	<allegro5/allegro.h>
+	"InputManager.h"
+
+1425373342 source:/home/edwin/Documents/Platformer/probandoAllegro/InputManager.cpp
+	"InputManager.h"
+
+1425373342 source:/home/edwin/Documents/Platformer/probandoAllegro/main.cpp
+	<iostream>
+	<fstream>
+	"allegro5/allegro.h"
+	"allegro5/allegro_image.h"
+	"allegro5/allegro_primitives.h"
+	"allegro5/allegro_font.h"
+	"allegro5/allegro_ttf.h"
+	"allegro5/allegro_acodec.h"
+	"allegro5/allegro_native_dialog.h"
+	"ScreenManager.h"
+	"InputManager.h"
+
+1425373342 /home/edwin/Documents/Platformer/probandoAllegro/ScreenManager.h
+	"allegro5/allegro.h"
+	"allegro5/allegro_image.h"
+	"GameScreen.h"
+	"SplashScreen.h"
+	"TitleScreen.h"
+	"FadeAnimation.h"
+
+1425373342 /home/edwin/Documents/Platformer/probandoAllegro/SplashScreen.h
+	<allegro5/allegro_font.h>
+	<allegro5/allegro_ttf.h>
+	"ScreenManager.h"
+	"InputManager.h"
+	"TitleScreen.h"
+
+1425373342 /home/edwin/Documents/Platformer/probandoAllegro/TitleScreen.h
+	<allegro5/allegro_font.h>
+	<allegro5/allegro_ttf.h>
+	"ScreenManager.h"
+	"InputManager.h"
+
+1425373342 source:/home/edwin/Documents/Platformer/probandoAllegro/ScreenManager.cpp
+	"ScreenManager.h"
+
+1425373342 source:/home/edwin/Documents/Platformer/probandoAllegro/SplashScreen.cpp
+	"SplashScreen.h"
+
+1425373342 source:/home/edwin/Documents/Platformer/probandoAllegro/TitleScreen.cpp
+	"TitleScreen.h"
+
+1425373342 source:/home/edwin/Documents/Platformer/Proyecto_Progra3_Platformer/Animation.cpp
+	"Animation.h"
+
+1425373342 /home/edwin/Documents/Platformer/Proyecto_Progra3_Platformer/Animation.h
+	<allegro5/allegro.h>
+	<allegro5/allegro_image.h>
+	<allegro5/allegro_font.h>
+	<allegro5/allegro_ttf.h>
+	<string>
+	"InputManager.h"
+
+1425373342 /home/edwin/Documents/Platformer/Proyecto_Progra3_Platformer/InputManager.h
+	<allegro5/allegro.h>
+	<allegro5/keyboard.h>
+	<vector>
+
+1425373342 source:/home/edwin/Documents/Platformer/Proyecto_Progra3_Platformer/FadeAnimation.cpp
+	"FadeAnimation.h"
+
+1425373342 /home/edwin/Documents/Platformer/Proyecto_Progra3_Platformer/FadeAnimation.h
+	"Animation.h"
+
+1425359223 source:/home/edwin/Documents/Platformer/Proyecto_Progra3_Platformer/FileManager.cpp
+	"FileManager.h"
+
+1425363748 /home/edwin/Documents/Platformer/Proyecto_Progra3_Platformer/FileManager.h
+	<string>
+	<vector>
+	<fstream>
+	<sstream>
+	<iostream>
+	<algorithm>
+
+1425373342 source:/home/edwin/Documents/Platformer/Proyecto_Progra3_Platformer/GameScreen.cpp
+	"GameScreen.h"
+
+1425379160 /home/edwin/Documents/Platformer/Proyecto_Progra3_Platformer/GameScreen.h
+	<allegro5/allegro.h>
+	"InputManager.h"
+	"FileManager.h"
+
+1425373342 source:/home/edwin/Documents/Platformer/Proyecto_Progra3_Platformer/InputManager.cpp
+	"InputManager.h"
+
+1425373342 source:/home/edwin/Documents/Platformer/Proyecto_Progra3_Platformer/main.cpp
+	<iostream>
+	<fstream>
+	"allegro5/allegro.h"
+	"allegro5/allegro_image.h"
+	"allegro5/allegro_primitives.h"
+	"allegro5/allegro_font.h"
+	"allegro5/allegro_ttf.h"
+	"allegro5/allegro_acodec.h"
+	"allegro5/allegro_native_dialog.h"
+	"ScreenManager.h"
+	"InputManager.h"
+
+1425379160 /home/edwin/Documents/Platformer/Proyecto_Progra3_Platformer/ScreenManager.h
+	"allegro5/allegro.h"
+	"allegro5/allegro_image.h"
+	"GameScreen.h"
+	"SplashScreen.h"
+	"GamePlayScreen.h"
+	"FadeAnimation.h"
+
+1425373342 /home/edwin/Documents/Platformer/Proyecto_Progra3_Platformer/SplashScreen.h
+	<allegro5/allegro_font.h>
+	<allegro5/allegro_ttf.h>
+	"ScreenManager.h"
+	"InputManager.h"
+	"TitleScreen.h"
+
+1425373342 /home/edwin/Documents/Platformer/Proyecto_Progra3_Platformer/TitleScreen.h
+	<allegro5/allegro_font.h>
+	<allegro5/allegro_ttf.h>
+	"ScreenManager.h"
+	"InputManager.h"
+
+1425373342 source:/home/edwin/Documents/Platformer/Proyecto_Progra3_Platformer/ScreenManager.cpp
+	"ScreenManager.h"
+
+1425379160 source:/home/edwin/Documents/Platformer/Proyecto_Progra3_Platformer/SplashScreen.cpp
+	"SplashScreen.h"
+
+1425373342 source:/home/edwin/Documents/Platformer/Proyecto_Progra3_Platformer/TitleScreen.cpp
+	"TitleScreen.h"
+
+1425379306 /home/edwin/Documents/Platformer/Proyecto_Progra3_Platformer/GamePlayScreen.h
+	"GameScreen.h"
+	"Player.h"
+
+1425379306 source:/home/edwin/Documents/Platformer/Proyecto_Progra3_Platformer/Player.cpp
+	<iostream>
+	"Player.h"
+
+1425374996 /home/edwin/Documents/Platformer/Proyecto_Progra3_Platformer/Player.h
+	"allegro5/allegro.h"
+	"allegro5/allegro_image.h"
+	<vector>
+	"InputManager.h"
+	"FileManager.h"
+
+1425379312 source:/home/edwin/Documents/Platformer/Proyecto_Progra3_Platformer/GamePlayScreen.cpp
+	"GamePlayScreen.h"
+
