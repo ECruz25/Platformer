@@ -25,14 +25,14 @@ class Animation
         virtual void SetAlpha(float value);
         float GetAlpha();
         bool GetIsActive();
-
-    protected:
         ALLEGRO_BITMAP *image, *source_rect;
         ALLEGRO_FONT *font;
         std::string text;
         float position[2];
         float alpha;
         bool is_active;
+
+    protected:
 };
 
 #endif // ANIMATION_H

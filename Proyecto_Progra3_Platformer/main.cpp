@@ -16,8 +16,8 @@ using namespace std;
 
 int main() {
 
-    int width = 500;
-    int height = 650;
+    int width = 800;
+    int height = 600;
 
     const float kFPS = 60.0f;
 
@@ -94,10 +94,8 @@ int main() {
         al_clear_to_color(al_map_rgb(0, 0, 0));
 
     }
-
     al_destroy_display(display);
     al_destroy_timer(timer);
     al_destroy_event_queue(event_queue);
-
     return 0;
 }

@@ -3,24 +3,28 @@
 
 #include <allegro5/allegro_font.h>
 #include <allegro5/allegro_ttf.h>
+#include <allegro5/allegro_image.h>
 
 #include "ScreenManager.h"
 #include "InputManager.h"
-#include "TitleScreen.h"
-#include "GameScreen.h"
+#include "SplashScreen.h"
+#include "Character.h"
+#include "Player.h"
 
-class GamePlayScreen : public GameScreen
+class GameplayScreen : public GameScreen
 {
     public:
-        GamePlayScreen();
-        ~GamePlayScreen();
+        GameplayScreen();
+        virtual ~GameplayScreen();
         void LoadContent();
         void UnloadContent();
         void Update(ALLEGRO_EVENT ev);
         void Draw(ALLEGRO_DISPLAY *display);
-
+        Player player;
+        list<Character*> characters;
+        ALLEGRO_BITMAP *background;
+    protected:
     private:
-        ALLEGRO_FONT *font;
 };
 
 #endif // GAMEPLAYSCREEN_H

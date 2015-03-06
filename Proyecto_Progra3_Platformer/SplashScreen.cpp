@@ -12,7 +12,7 @@ SplashScreen::~SplashScreen()
 
 void SplashScreen::LoadContent()
 {
-    font = al_load_font("assets/fonts/arial.ttf", 30, NULL);
+    font = al_load_font("assets/fonts/arial.ttf", 30, 1);
 }
 
 void SplashScreen::UnloadContent()
@@ -24,7 +24,7 @@ void SplashScreen::Update(ALLEGRO_EVENT ev)
 {
     if (input.IsKeyPressed(ev, ALLEGRO_KEY_ENTER))
     {
-        ScreenManager::GetInstance().AddScreen(new GamePlayScreen);
+        ScreenManager::GetInstance().AddScreen(new GameplayScreen);
     }
 }
 

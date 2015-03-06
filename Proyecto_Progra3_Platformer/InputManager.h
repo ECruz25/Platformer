@@ -18,8 +18,8 @@ class InputManager
         bool IsKeyPressed(ALLEGRO_EVENT ev, vector<int> keys);
         bool IsKeyReleased(ALLEGRO_EVENT ev, int key);
         bool IsKeyReleased(ALLEGRO_EVENT ev, vector<int> keys);
-    private:
         ALLEGRO_KEYBOARD_STATE keystate;
+    private:
 };
 
 #endif // INPUTMANAGER_H

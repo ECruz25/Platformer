@@ -6,13 +6,13 @@
 
 #include "GameScreen.h"
 #include "SplashScreen.h"
-#include "GamePlayScreen.h"
+#include "GameplayScreen.h"
 #include "FadeAnimation.h"
 
 class ScreenManager
 {
     public:
-        ~ScreenManager();
+        virtual ~ScreenManager();
         static ScreenManager &GetInstance();
         void Initialize();
         void LoadContent();
@@ -20,8 +20,6 @@ class ScreenManager
         void Update(ALLEGRO_EVENT ev);
         void Draw(ALLEGRO_DISPLAY *display);
         void AddScreen(GameScreen *screen);
-
-    private:
         ScreenManager();
         ScreenManager(ScreenManager const&);
         void operator = (ScreenManager const&);
@@ -30,6 +28,8 @@ class ScreenManager
         FadeAnimation transition;
         bool start_transition;
         GameScreen *CurrentScreen, *NewScreen;
+
+    private:
 
 };
 

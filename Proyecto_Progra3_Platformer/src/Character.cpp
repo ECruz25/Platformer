@@ -2,8 +2,8 @@
 
 Character::Character()
 {
-    y = 500;
-    x = 700;
+    y = 0;
+    x = 0;
     w = 75;
     h = 30;
     int frame = 0;
@@ -22,7 +22,7 @@ void Character::draw(ALLEGRO_DISPLAY* display)
 
     al_draw_bitmap(textura_actual_temp, x, y, 0);
 
-    if(frame%10==0)
+    if(frame%100==0)
     {
         textura_actual_int++;
         if(textura_actual_int>=(*vector_textura_actual_temp).size())
@@ -42,14 +42,13 @@ void Character::draw(ALLEGRO_DISPLAY* display)
 
 void Character::init(ALLEGRO_DISPLAY* display, list<Character*> *characters)
 {
-    frame = 0;
-    textura_actual_int = 0;
+    frame=0;
+    textura_actual_int=0;
     this->characters = characters;
 }
 
 void Character::setAnimacion(string nombre)
 {
-
     if(this->vector_actual_str != nombre)
     {
         this->textura_actual_int = 0;
@@ -60,6 +59,5 @@ void Character::setAnimacion(string nombre)
 
         al_draw_bitmap(textura_actual_temp, x, y, 0);
     }
-
     this->vector_actual_str = nombre;
 }

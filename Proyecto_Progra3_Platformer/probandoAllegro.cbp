@@ -17,6 +17,7 @@
 					<Add option="-DALLEGRO_STATICLINK" />
 					<Add directory="../../../../../allegro-5.0.10-mingw-4.7.0/include" />
 					<Add directory="../../../../../allegro-5.0.10-mingw-4.7.0/lib" />
+					<Add directory="include" />
 				</Compiler>
 				<Linker>
 					<Add library="/home/edwin/allegro/build/lib/liballegro.so" />
@@ -40,6 +41,7 @@
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-O2" />
+					<Add directory="include" />
 				</Compiler>
 				<Linker>
 					<Add option="-s" />
@@ -53,14 +55,20 @@
 		</Compiler>
 		<Unit filename="Animation.cpp" />
 		<Unit filename="Animation.h" />
+		<Unit filename="Character.cpp" />
+		<Unit filename="Character.h" />
 		<Unit filename="FadeAnimation.cpp" />
 		<Unit filename="FadeAnimation.h" />
 		<Unit filename="FileManager.cpp" />
 		<Unit filename="FileManager.h" />
 		<Unit filename="GameScreen.cpp" />
 		<Unit filename="GameScreen.h" />
+		<Unit filename="GameplayScreen.cpp" />
+		<Unit filename="GameplayScreen.h" />
 		<Unit filename="InputManager.cpp" />
 		<Unit filename="InputManager.h" />
+		<Unit filename="Player.cpp" />
+		<Unit filename="Player.h" />
 		<Unit filename="ScreenManager.cpp" />
 		<Unit filename="ScreenManager.h" />
 		<Unit filename="SplashScreen.cpp" />

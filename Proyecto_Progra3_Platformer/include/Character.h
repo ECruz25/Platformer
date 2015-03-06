@@ -21,10 +21,10 @@ class Character
         int frame;
         int textura_actual_int;
         string vector_actual_str;
-        float x, y, w, h;
+        int x, y, w, h;
 
         virtual void draw(ALLEGRO_DISPLAY* display);
-        virtual void act(ALLEGRO_EVENT event) = 0;
+        virtual void act()=0;
         void init(ALLEGRO_DISPLAY* display, list<Character*> *characters);
         void setAnimacion(string nombre);
     protected:

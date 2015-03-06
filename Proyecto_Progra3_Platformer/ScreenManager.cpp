@@ -67,7 +67,6 @@ void ScreenManager::Draw(ALLEGRO_DISPLAY *display)
     {
         transition.Draw(display);
     }
-
 }
 
 void ScreenManager::Transition()
