@@ -20,6 +20,8 @@ int main() {
     int height = 600;
 
     const float kFPS = 60.0f;
+    bool done = false;
+    bool redraw = true;
 
     ALLEGRO_DISPLAY *display;
 
@@ -58,8 +60,6 @@ int main() {
     al_register_event_source(event_queue, al_get_timer_event_source(timer));
     al_register_event_source(event_queue, al_get_display_event_source(display));
 
-    bool done = false;
-
     InputManager input;
     ScreenManager::GetInstance().Initialize();
     ScreenManager::GetInstance().LoadContent();
@@ -77,21 +77,31 @@ int main() {
         al_wait_for_event(event_queue, &ev);
         al_get_keyboard_state(&keystate);
 
-        if (input.IsKeyReleased(ev, keys))
-        {
-            done = true;
-        }
 
         if(ev.type == ALLEGRO_EVENT_DISPLAY_CLOSE)
         {
             done = true;
         }
+        else if(ev.type == ALLEGRO_EVENT_TIMER)
+        {
+            redraw = true;
+        }
+        else if (input.IsKeyReleased(ev, keys))
+        {
+            done = true;
+        }
 
         ScreenManager::GetInstance().Update(ev);
-        ScreenManager::GetInstance().Draw(display);
 
-        al_flip_display();
-        al_clear_to_color(al_map_rgb(0, 0, 0));
+        if(redraw && al_is_event_queue_empty(event_queue))
+		{
+			redraw = false;
+
+            ScreenManager::GetInstance().Draw(display);
+
+            al_flip_display();
+            al_clear_to_color(al_map_rgb(0, 0, 0));
+		}
 
     }
     al_destroy_display(display);

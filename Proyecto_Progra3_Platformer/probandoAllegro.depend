@@ -607,7 +607,7 @@
 1425373342 source:/home/edwin/Documents/Platformer/Proyecto_Progra3_Platformer/InputManager.cpp
 	"InputManager.h"
 
-1425616616 source:/home/edwin/Documents/Platformer/Proyecto_Progra3_Platformer/main.cpp
+1425629981 source:/home/edwin/Documents/Platformer/Proyecto_Progra3_Platformer/main.cpp
 	<iostream>
 	<fstream>
 	"allegro5/allegro.h"
