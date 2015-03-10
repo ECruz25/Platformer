@@ -11,17 +11,18 @@ class Player : public Character
         Player(ALLEGRO_DISPLAY* display, list<Character*> *characters);
         ALLEGRO_EVENT event;
         InputManager input;
-        void Movement();
         int jumps;
         int floor;
-        bool touching_ground;
         bool jumping;
+        bool can_jump;
         void jump();
-        enum actions {UP, DOWN, LEFT, RIGHT};
-        bool keys[4] = {false, false, false, false};
+        enum actions {LEFT, RIGHT};
+        bool keys[4] = {false, false};
         virtual ~Player();
         void draw(ALLEGRO_DISPLAY* display);
         void act(ALLEGRO_EVENT event);
+        bool IsOnSolidGround(int x1, int y1);
+        bool TheresRoof(int x1, int y1);
     protected:
     private:
 };

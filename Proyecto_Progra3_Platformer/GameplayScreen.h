@@ -24,6 +24,7 @@ class GameplayScreen : public GameScreen
         Player player;
         Floor floor;
         list<Character*> characters;
+        ALLEGRO_BITMAP* floor_;
         ALLEGRO_BITMAP* floor1;
         ALLEGRO_BITMAP* floor2;
         ALLEGRO_BITMAP *background;

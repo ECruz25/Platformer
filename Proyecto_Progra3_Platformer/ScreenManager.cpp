@@ -31,7 +31,7 @@ void ScreenManager::AddScreen(GameScreen *screen)
 
 void ScreenManager::Initialize()
 {
-    CurrentScreen = new SplashScreen;
+    CurrentScreen = new GameplayScreen;
 }
 
 void ScreenManager::LoadContent()
