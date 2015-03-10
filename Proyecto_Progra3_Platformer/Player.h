@@ -12,9 +12,14 @@ class Player : public Character
         ALLEGRO_EVENT event;
         InputManager input;
         void Movement();
+        int jumps;
+        int floor;
+        bool jumping;
+        void jump();
         enum actions {UP, DOWN, LEFT, RIGHT};
         bool keys[4] = {false, false, false, false};
         virtual ~Player();
+        void draw(ALLEGRO_DISPLAY* display);
         void act(ALLEGRO_EVENT event);
     protected:
     private:

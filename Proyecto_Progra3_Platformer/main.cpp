@@ -77,7 +77,6 @@ int main() {
         al_wait_for_event(event_queue, &ev);
         al_get_keyboard_state(&keystate);
 
-
         if(ev.type == ALLEGRO_EVENT_DISPLAY_CLOSE)
         {
             done = true;

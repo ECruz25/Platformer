@@ -12,7 +12,7 @@ SplashScreen::~SplashScreen()
 
 void SplashScreen::LoadContent()
 {
-    font = al_load_font("assets/fonts/arial.ttf", 30, 1);
+    font = al_load_font("assets/fonts/arial.ttf", 72, 1);
 }
 
 void SplashScreen::UnloadContent()
@@ -30,5 +30,5 @@ void SplashScreen::Update(ALLEGRO_EVENT ev)
 
 void SplashScreen::Draw(ALLEGRO_DISPLAY *display)
 {
-    al_draw_text(font, al_map_rgb(0, 0, 255), 100, 100, NULL, "SplashScreen");
+    al_draw_text(font, al_map_rgb(0, 0, 255), 250, 100, NULL, "Platformer");
 }
