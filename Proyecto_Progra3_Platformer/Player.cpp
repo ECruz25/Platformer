@@ -2,6 +2,7 @@
 
 Player::Player()
 {
+    y = 500;
 
 }
 
@@ -141,17 +142,22 @@ void Player::act(ALLEGRO_EVENT ev)
         {
             keys[RIGHT] = false;
         }
-        x+=5;
-        setAnimacion("walk_right");
+        else
+        {
+            x+=5;
+            setAnimacion("walk_right");
+        }
     }
     else if(keys[LEFT])
     {
-        if(x < -10)
+        if(x < 0)
         {
             keys[LEFT] = false;
         }
-        x-=5;
-        setAnimacion("walk_left");
+        else {
+            x-=5;
+            setAnimacion("walk_left");
+        }
     }
     else if(keys[DOWN])
     {
@@ -170,22 +176,28 @@ void Player::Movement()
 
 void Player::jump()
 {
-    if(vector_actual_str == "walk_right" || vector_actual_str == "right")
+
+    if(y == 500)
     {
-//        tempo = vector_actual_str;
-        vector_actual_str = "jumping_right";
+        if(vector_actual_str == "walk_right" || vector_actual_str == "right")
+        {
+            temp = vector_actual_str;
+//            vector_actual_str = "jumping_right";
+        }
+
+        if(vector_actual_str == "walk_left" || vector_actual_str == "left")
+        {
+            temp = vector_actual_str;
+//            vector_actual_str = "jumping_left";
+        }
+
+        cout<<"jumping"<<endl;
+        jumps = 0;
+        floor = y;
+        jumping = true;
+
     }
 
-    if(vector_actual_str == "walk_left" || vector_actual_str == "left")
-    {
-//        tempo = vector_actual_str;
-        vector_actual_str = "jumping_left";
-    }
-
-    cout<<"jumping"<<endl;
-    jumps = 0;
-    floor = y;
-    jumping = true;
 }
 
 Player::~Player()

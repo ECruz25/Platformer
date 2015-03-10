@@ -21,7 +21,7 @@ class Character
         int frame;
         int textura_actual_int;
         string vector_actual_str;
-//        string temp1o;
+        string temp;
         float x, y, w, h;
 
         virtual void draw(ALLEGRO_DISPLAY* display);

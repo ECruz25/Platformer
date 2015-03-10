@@ -659,7 +659,7 @@
 	"TitleScreen.h"
 	"GameScreen.h"
 
-1425953618 source:/home/edwin/Documents/Platformer/Proyecto_Progra3_Platformer/Player.cpp
+1425956008 source:/home/edwin/Documents/Platformer/Proyecto_Progra3_Platformer/Player.cpp
 	"Player.h"
 
 1425944376 /home/edwin/Documents/Platformer/Proyecto_Progra3_Platformer/Player.h
@@ -672,7 +672,7 @@
 1425942292 source:/home/edwin/Documents/Platformer/Proyecto_Progra3_Platformer/Character.cpp
 	"Character.h"
 
-1425953712 /home/edwin/Documents/Platformer/Proyecto_Progra3_Platformer/Character.h
+1425954608 /home/edwin/Documents/Platformer/Proyecto_Progra3_Platformer/Character.h
 	<allegro5/allegro.h>
 	<allegro5/allegro_image.h>
 	<vector>
