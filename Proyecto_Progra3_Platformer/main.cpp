@@ -52,6 +52,7 @@ int main() {
     al_init_font_addon();
     al_init_ttf_addon();
 
+//    ALLEGRO_BITMAP* image = al_load_bitmap("assets/floor2.png");
     ALLEGRO_TIMER *timer = al_create_timer(1.0f / kFPS);
     ALLEGRO_EVENT_QUEUE *event_queue = al_create_event_queue();
     ALLEGRO_KEYBOARD_STATE keystate;
@@ -76,6 +77,7 @@ int main() {
         ALLEGRO_EVENT ev;
         al_wait_for_event(event_queue, &ev);
         al_get_keyboard_state(&keystate);
+//        al_draw_bitmap(image, 160, 565, 0);
 
         if(ev.type == ALLEGRO_EVENT_DISPLAY_CLOSE)
         {

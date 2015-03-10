@@ -2,12 +2,16 @@
 
 Player::Player()
 {
-    y = 500;
 
 }
 
 Player::Player(ALLEGRO_DISPLAY* display,list<Character*> *characters)
 {
+    x = 350;
+    y = 540;
+    jumps = 0;
+    jumping = false;
+
     mapa_texturas["left"] = new vector<ALLEGRO_BITMAP*>();
     mapa_texturas["right"] = new vector<ALLEGRO_BITMAP*>();
     mapa_texturas["walk_right"] = new vector<ALLEGRO_BITMAP*>();
@@ -35,6 +39,11 @@ Player::Player(ALLEGRO_DISPLAY* display,list<Character*> *characters)
 
     init(display, characters);
 
+//    if(y!=550)
+//    {
+//        y = 550;
+//    }
+
 }
 
 void Player::draw(ALLEGRO_DISPLAY* display)
@@ -43,46 +52,61 @@ void Player::draw(ALLEGRO_DISPLAY* display)
 
     ALLEGRO_BITMAP* textura_actual_temp = (*vector_textura_actual_temp)[textura_actual_int];
 
+    al_draw_bitmap(textura_actual_temp, x, y, 0);
 
-//    if(frame%100==0)
-//    {
-    if(jumping)
+    if(x>140)
     {
-       al_draw_bitmap(textura_actual_temp, x, y, 0);
-
         if(frame%5==0)
         {
-            if(jumps<3)
+            if(jumping)
             {
-                y-=50;
-                jumps++;
-             }
-            else
-            {
-                y+=50;
+                if(jumps<3)
+                {
+                    if(y == 490 && x >=180 && x<=225)
+                    {
+                        y = 540;
+                    }
+                    else
+                    {
+                        y-=50;
+                        jumps++;
+                    }
+                }
+                else
+                {
+                    if(y == 440 && x >=180 && x<=225)
+                    {
+                        y = 440;
+                    }
+                    else
+                    {
+                        y+=50;
+                    }
+                }
+                if(y >= floor)
+                {
+                    jumping = false;
+                }
             }
-            if(y >= floor)
-            {
-                jumping = false;
-            }
+        //
+        //        textura_actual_int++;
+        //        if(textura_actual_int>=(*vector_textura_actual_temp).size())
+        //        {
+        //            textura_actual_int=0;
+        //            if(vector_actual_str != "walk_right" && vector_actual_str != "walk_left")
+        //            {
+        //                if(vector_actual_str == "punch_right")
+        //                    setAnimacion("right");
+        //                if(vector_actual_str == "punch_left")
+        //                    setAnimacion("left");
+        //            }
+        //        }
         }
     }
-    textura_actual_int++;
-    if(textura_actual_int>=(*vector_textura_actual_temp).size())
+    else
     {
-
-        al_draw_bitmap(textura_actual_temp, x, y, 0);
-
-        textura_actual_int=0;
-        if(vector_actual_str != "walk_right" && vector_actual_str != "walk_left")
-        {
-            if(vector_actual_str == "punch_right")
-                setAnimacion("right");
-            if(vector_actual_str == "punch_left")
-                setAnimacion("left");
-        }
+        y+=5;
     }
-
     frame++;
 }
 
@@ -98,7 +122,7 @@ void Player::act(ALLEGRO_EVENT ev)
     {
 //        jump();
     }
-    else if(input.IsKeyPressed(ev, ALLEGRO_KEY_S) && y < 550)
+    else if(input.IsKeyPressed(ev, ALLEGRO_KEY_S))
     {
 //        jump();
     }
@@ -177,7 +201,7 @@ void Player::Movement()
 void Player::jump()
 {
 
-    if(y == 500)
+    if(y == 540 || y == 440)
     {
         if(vector_actual_str == "walk_right" || vector_actual_str == "right")
         {

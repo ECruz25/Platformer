@@ -10,6 +10,7 @@
 #include "SplashScreen.h"
 #include "Character.h"
 #include "Player.h"
+#include "Floor.h"
 
 class GameplayScreen : public GameScreen
 {
@@ -21,7 +22,10 @@ class GameplayScreen : public GameScreen
         void Update(ALLEGRO_EVENT ev);
         void Draw(ALLEGRO_DISPLAY *display);
         Player player;
+        Floor floor;
         list<Character*> characters;
+        ALLEGRO_BITMAP* floor1;
+        ALLEGRO_BITMAP* floor2;
         ALLEGRO_BITMAP *background;
     protected:
     private:

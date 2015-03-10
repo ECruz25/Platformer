@@ -14,6 +14,7 @@ class Player : public Character
         void Movement();
         int jumps;
         int floor;
+        bool touching_ground;
         bool jumping;
         void jump();
         enum actions {UP, DOWN, LEFT, RIGHT};

@@ -61,6 +61,8 @@
 		<Unit filename="FadeAnimation.h" />
 		<Unit filename="FileManager.cpp" />
 		<Unit filename="FileManager.h" />
+		<Unit filename="Floor.cpp" />
+		<Unit filename="Floor.h" />
 		<Unit filename="GameScreen.cpp" />
 		<Unit filename="GameScreen.h" />
 		<Unit filename="GameplayScreen.cpp" />
