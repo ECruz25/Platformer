@@ -1,17 +1,31 @@
 #ifndef PLAYER_H
 #define PLAYER_H
 
-#include "Character.h"
-#include "InputManager.h"
+#include <iostream>
 
-class Player : public Character
+#include "InputManager.h"
+#include "character.h"
+#include "LevelOne.h"
+
+using namespace std;
+
+class Player
 {
     public:
         Player();
-        Player(ALLEGRO_DISPLAY* display, list<Character*> *characters);
+        LevelOne* level1;
         ALLEGRO_EVENT event;
+        ALLEGRO_BITMAP* image;
         InputManager input;
+        vector<ALLEGRO_BITMAP*> images;
+        bool dead;
         int jumps;
+        int frame;
+        int x;
+        int y;
+        int h;
+        int w;
+        int level;
         int floor;
         bool jumping;
         bool can_jump;
@@ -21,8 +35,9 @@ class Player : public Character
         virtual ~Player();
         void draw(ALLEGRO_DISPLAY* display);
         void act(ALLEGRO_EVENT event);
-        bool IsOnSolidGround(int x1, int y1);
-        bool TheresRoof(int x1, int y1);
+        void revive();
+//        bool IsOnSolidGround(int x1, int y1);
+//        bool TheresRoof(int x1, int y1);
     protected:
     private:
 };

@@ -57,6 +57,8 @@
 		<Unit filename="Animation.h" />
 		<Unit filename="Character.cpp" />
 		<Unit filename="Character.h" />
+		<Unit filename="Enemy.cpp" />
+		<Unit filename="Enemy.h" />
 		<Unit filename="FadeAnimation.cpp" />
 		<Unit filename="FadeAnimation.h" />
 		<Unit filename="FileManager.cpp" />
@@ -69,6 +71,8 @@
 		<Unit filename="GameplayScreen.h" />
 		<Unit filename="InputManager.cpp" />
 		<Unit filename="InputManager.h" />
+		<Unit filename="LevelOne.cpp" />
+		<Unit filename="LevelOne.h" />
 		<Unit filename="Player.cpp" />
 		<Unit filename="Player.h" />
 		<Unit filename="ScreenManager.cpp" />
@@ -77,6 +81,8 @@
 		<Unit filename="SplashScreen.h" />
 		<Unit filename="TitleScreen.cpp" />
 		<Unit filename="TitleScreen.h" />
+		<Unit filename="character.cpp" />
+		<Unit filename="character.h" />
 		<Unit filename="main.cpp" />
 		<Extensions>
 			<code_completion />

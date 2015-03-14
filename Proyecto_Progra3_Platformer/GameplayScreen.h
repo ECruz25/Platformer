@@ -21,12 +21,10 @@ class GameplayScreen : public GameScreen
         void UnloadContent();
         void Update(ALLEGRO_EVENT ev);
         void Draw(ALLEGRO_DISPLAY *display);
-        Player player;
+        Player* player;
+        int frame;
         Floor floor;
-        list<Character*> characters;
-        ALLEGRO_BITMAP* floor_;
-        ALLEGRO_BITMAP* floor1;
-        ALLEGRO_BITMAP* floor2;
+        ALLEGRO_BITMAP* enemy;
         ALLEGRO_BITMAP *background;
     protected:
     private:

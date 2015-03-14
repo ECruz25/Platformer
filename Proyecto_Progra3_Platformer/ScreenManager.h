@@ -15,6 +15,7 @@ class ScreenManager
         virtual ~ScreenManager();
         static ScreenManager &GetInstance();
         void Initialize();
+        bool done;
         void LoadContent();
         void UnloadContent();
         void Update(ALLEGRO_EVENT ev);

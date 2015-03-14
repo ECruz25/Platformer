@@ -607,7 +607,7 @@
 1425942292 source:/home/edwin/Documents/Platformer/Proyecto_Progra3_Platformer/InputManager.cpp
 	"InputManager.h"
 
-1426015633 source:/home/edwin/Documents/Platformer/Proyecto_Progra3_Platformer/main.cpp
+1426181856 source:/home/edwin/Documents/Platformer/Proyecto_Progra3_Platformer/main.cpp
 	<iostream>
 	<fstream>
 	"allegro5/allegro.h"
@@ -659,20 +659,20 @@
 	"TitleScreen.h"
 	"GameScreen.h"
 
-1426016135 source:/home/edwin/Documents/Platformer/Proyecto_Progra3_Platformer/Player.cpp
+1426192257 source:/home/edwin/Documents/Platformer/Proyecto_Progra3_Platformer/Player.cpp
 	"Player.h"
 
-1426014595 /home/edwin/Documents/Platformer/Proyecto_Progra3_Platformer/Player.h
-	"Character.h"
+1426189499 /home/edwin/Documents/Platformer/Proyecto_Progra3_Platformer/Player.h
 	"InputManager.h"
+	"character.h"
 
 1425490838 source:/home/edwin/Documents/Platformer/Proyecto_Progra3_Platformer/GamePlayScreen.cpp
 	"GamePlayScreen.h"
 
-1425959048 source:/home/edwin/Documents/Platformer/Proyecto_Progra3_Platformer/Character.cpp
+1426186235 source:/home/edwin/Documents/Platformer/Proyecto_Progra3_Platformer/Character.cpp
 	"Character.h"
 
-1425958732 /home/edwin/Documents/Platformer/Proyecto_Progra3_Platformer/Character.h
+1426186235 /home/edwin/Documents/Platformer/Proyecto_Progra3_Platformer/Character.h
 	<allegro5/allegro.h>
 	<allegro5/allegro_image.h>
 	<vector>
@@ -697,10 +697,10 @@
 1425486619 /home/edwin/Documents/Platformer/Proyecto_Progra3_Platformer/include/Player.h
 	"Character.h"
 
-1426016028 source:/home/edwin/Documents/Platformer/Proyecto_Progra3_Platformer/GameplayScreen.cpp
+1426190649 source:/home/edwin/Documents/Platformer/Proyecto_Progra3_Platformer/GameplayScreen.cpp
 	"GameplayScreen.h"
 
-1426015387 /home/edwin/Documents/Platformer/Proyecto_Progra3_Platformer/GameplayScreen.h
+1426190038 /home/edwin/Documents/Platformer/Proyecto_Progra3_Platformer/GameplayScreen.h
 	<allegro5/allegro_font.h>
 	<allegro5/allegro_ttf.h>
 	<allegro5/allegro_image.h>
@@ -711,9 +711,172 @@
 	"Player.h"
 	"Floor.h"
 
-1425965256 source:/home/edwin/Documents/Platformer/Proyecto_Progra3_Platformer/Floor.cpp
+1426087997 source:/home/edwin/Documents/Platformer/Proyecto_Progra3_Platformer/Floor.cpp
 	"Floor.h"
 
-1425964994 /home/edwin/Documents/Platformer/Proyecto_Progra3_Platformer/Floor.h
+1426087997 /home/edwin/Documents/Platformer/Proyecto_Progra3_Platformer/Floor.h
 	"Character.h"
+
+1426185751 source:/home/edwin/Documents/Platformer/Proyecto_Progra3_Platformer/Enemy.cpp
+	"Enemy.h"
+
+1426186234 /home/edwin/Documents/Platformer/Proyecto_Progra3_Platformer/Enemy.h
+	"character.h"
+
+1426188088 /home/edwin/Documents/Platformer/Proyecto_Progra3_Platformer/character.h
+	<allegro5/allegro.h>
+	<allegro5/allegro_image.h>
+
+1426188319 source:/home/edwin/Documents/Platformer/Proyecto_Progra3_Platformer/character.cpp
+	"character.h"
+
+1425942292 source:/home/edwin/Documents/Programacion 3/Platformer/Proyecto_Progra3_Platformer/Animation.cpp
+	"Animation.h"
+
+1425942292 /home/edwin/Documents/Programacion 3/Platformer/Proyecto_Progra3_Platformer/Animation.h
+	<allegro5/allegro.h>
+	<allegro5/allegro_image.h>
+	<allegro5/allegro_font.h>
+	<allegro5/allegro_ttf.h>
+	<string>
+	"InputManager.h"
+
+1425942292 /home/edwin/Documents/Programacion 3/Platformer/Proyecto_Progra3_Platformer/InputManager.h
+	<allegro5/allegro.h>
+	<allegro5/keyboard.h>
+	<vector>
+
+1426186235 source:/home/edwin/Documents/Programacion 3/Platformer/Proyecto_Progra3_Platformer/Character.cpp
+	"Character.h"
+
+1426186235 /home/edwin/Documents/Programacion 3/Platformer/Proyecto_Progra3_Platformer/Character.h
+	<allegro5/allegro.h>
+	<allegro5/allegro_image.h>
+	<vector>
+	<list>
+	<iostream>
+	<map>
+
+1426308089 source:/home/edwin/Documents/Programacion 3/Platformer/Proyecto_Progra3_Platformer/character.cpp
+	"character.h"
+
+1426188088 /home/edwin/Documents/Programacion 3/Platformer/Proyecto_Progra3_Platformer/character.h
+	<allegro5/allegro.h>
+	<allegro5/allegro_image.h>
+
+1426185751 source:/home/edwin/Documents/Programacion 3/Platformer/Proyecto_Progra3_Platformer/Enemy.cpp
+	"Enemy.h"
+
+1426186234 /home/edwin/Documents/Programacion 3/Platformer/Proyecto_Progra3_Platformer/Enemy.h
+	"character.h"
+
+1425942292 source:/home/edwin/Documents/Programacion 3/Platformer/Proyecto_Progra3_Platformer/FadeAnimation.cpp
+	"FadeAnimation.h"
+
+1425942292 /home/edwin/Documents/Programacion 3/Platformer/Proyecto_Progra3_Platformer/FadeAnimation.h
+	"Animation.h"
+
+1425942292 source:/home/edwin/Documents/Programacion 3/Platformer/Proyecto_Progra3_Platformer/FileManager.cpp
+	"FileManager.h"
+
+1425942292 /home/edwin/Documents/Programacion 3/Platformer/Proyecto_Progra3_Platformer/FileManager.h
+	<string>
+	<vector>
+	<fstream>
+	<sstream>
+	<iostream>
+	<algorithm>
+
+1426346987 source:/home/edwin/Documents/Programacion 3/Platformer/Proyecto_Progra3_Platformer/Floor.cpp
+	"Floor.h"
+
+1426346305 /home/edwin/Documents/Programacion 3/Platformer/Proyecto_Progra3_Platformer/Floor.h
+	"Character.h"
+	"LevelOne.h"
+
+1426345637 source:/home/edwin/Documents/Programacion 3/Platformer/Proyecto_Progra3_Platformer/GameplayScreen.cpp
+	"GameplayScreen.h"
+
+1426345623 /home/edwin/Documents/Programacion 3/Platformer/Proyecto_Progra3_Platformer/GameplayScreen.h
+	<allegro5/allegro_font.h>
+	<allegro5/allegro_ttf.h>
+	<allegro5/allegro_image.h>
+	"ScreenManager.h"
+	"InputManager.h"
+	"SplashScreen.h"
+	"Character.h"
+	"Player.h"
+	"Floor.h"
+
+1426346033 /home/edwin/Documents/Programacion 3/Platformer/Proyecto_Progra3_Platformer/ScreenManager.h
+	"allegro5/allegro.h"
+	"allegro5/allegro_image.h"
+	"GameScreen.h"
+	"SplashScreen.h"
+	"GameplayScreen.h"
+	"FadeAnimation.h"
+
+1425942292 /home/edwin/Documents/Programacion 3/Platformer/Proyecto_Progra3_Platformer/GameScreen.h
+	<allegro5/allegro.h>
+	"InputManager.h"
+	"FileManager.h"
+
+1425942292 /home/edwin/Documents/Programacion 3/Platformer/Proyecto_Progra3_Platformer/SplashScreen.h
+	<allegro5/allegro_font.h>
+	<allegro5/allegro_ttf.h>
+	"ScreenManager.h"
+	"InputManager.h"
+	"TitleScreen.h"
+	"GameplayScreen.h"
+
+1425942292 /home/edwin/Documents/Programacion 3/Platformer/Proyecto_Progra3_Platformer/TitleScreen.h
+	<allegro5/allegro_font.h>
+	<allegro5/allegro_ttf.h>
+	"ScreenManager.h"
+	"InputManager.h"
+
+1426348452 /home/edwin/Documents/Programacion 3/Platformer/Proyecto_Progra3_Platformer/Player.h
+	<iostream>
+	"InputManager.h"
+	"character.h"
+	"LevelOne.h"
+
+1425942292 source:/home/edwin/Documents/Programacion 3/Platformer/Proyecto_Progra3_Platformer/GameScreen.cpp
+	"GameScreen.h"
+
+1425942292 source:/home/edwin/Documents/Programacion 3/Platformer/Proyecto_Progra3_Platformer/InputManager.cpp
+	"InputManager.h"
+
+1426181856 source:/home/edwin/Documents/Programacion 3/Platformer/Proyecto_Progra3_Platformer/main.cpp
+	<iostream>
+	<fstream>
+	"allegro5/allegro.h"
+	"allegro5/allegro_image.h"
+	"allegro5/allegro_primitives.h"
+	"allegro5/allegro_font.h"
+	"allegro5/allegro_ttf.h"
+	"allegro5/allegro_acodec.h"
+	"allegro5/allegro_native_dialog.h"
+	"ScreenManager.h"
+	"InputManager.h"
+
+1426348706 source:/home/edwin/Documents/Programacion 3/Platformer/Proyecto_Progra3_Platformer/Player.cpp
+	"Player.h"
+
+1426345752 source:/home/edwin/Documents/Programacion 3/Platformer/Proyecto_Progra3_Platformer/ScreenManager.cpp
+	"ScreenManager.h"
+
+1425942739 source:/home/edwin/Documents/Programacion 3/Platformer/Proyecto_Progra3_Platformer/SplashScreen.cpp
+	"SplashScreen.h"
+
+1425942292 source:/home/edwin/Documents/Programacion 3/Platformer/Proyecto_Progra3_Platformer/TitleScreen.cpp
+	"TitleScreen.h"
+
+1426349469 source:/home/edwin/Documents/Programacion 3/Platformer/Proyecto_Progra3_Platformer/LevelOne.cpp
+	"LevelOne.h"
+
+1426348664 /home/edwin/Documents/Programacion 3/Platformer/Proyecto_Progra3_Platformer/LevelOne.h
+	<iostream>
+	"allegro5/allegro.h"
+	"allegro5/allegro_image.h"
 

@@ -1,23 +1,20 @@
 #include "Floor.h"
 
-Floor::Floor(ALLEGRO_DISPLAY* display)
-{
-    image = al_load_bitmap("assets/floor2.png");
-}
-
 Floor::Floor()
 {
-    //ctor
+
+    level1 = new LevelOne;
+//    image = al_load_bitmap("assets/floor2.png");
 }
 
 Floor::~Floor()
 {
-    //dtor
+
 }
 
-void Floor::draw(ALLEGRO_DISPLAY* display, int x, int y)
+void Floor::draw(ALLEGRO_DISPLAY* display)
 {
-    al_draw_bitmap(image, x, y, 0);
+    level1->draw(display);
 }
 void Floor::act(ALLEGRO_EVENT event)
 {
