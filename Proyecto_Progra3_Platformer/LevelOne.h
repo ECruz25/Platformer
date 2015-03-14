@@ -35,6 +35,14 @@ class LevelOne
         int platform6_;
         int platform6_top;
         int platform6_bottom;
+        int platform7;
+        int platform7_;
+        int platform7_top;
+        int platform7_bottom;
+        int platform8;
+        int platform8_;
+        int platform8_top;
+        int platform8_bottom;
         bool can_jump;
         ALLEGRO_BITMAP* floor;
         ALLEGRO_BITMAP* floor1;

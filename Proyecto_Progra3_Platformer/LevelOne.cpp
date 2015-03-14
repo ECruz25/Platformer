@@ -32,9 +32,19 @@ LevelOne::LevelOne()
     platform5_bottom = 240;
 
     platform6 = 70;
-    platform6_ = 260;
-    platform6_top = 390;
+    platform6_ = 265;
+    platform6_top = 290;
     platform6_bottom = 240;
+
+    platform7 = 310;
+    platform7_ = 405;
+    platform7_top = 290;
+    platform7_bottom = 140;
+
+    platform8 = 480;
+    platform8_ = 405;
+    platform8_top = 290;
+    platform8_bottom = 40;
 }
 
 void LevelOne::draw(ALLEGRO_DISPLAY* display)
@@ -45,7 +55,9 @@ void LevelOne::draw(ALLEGRO_DISPLAY* display)
     al_draw_bitmap(floor1, -350, 365, 0);
     al_draw_bitmap(floor1, -450, 265, 0);
     al_draw_bitmap(floor1, -350, 265, 0);
+    al_draw_bitmap(floor1, -200, 165, 0);
     al_draw_bitmap(floor2, 160, 565, 0);
+    al_draw_bitmap(floor2, 500, 65, 0);
 }
 
 bool LevelOne::IsOnSolidGround(int x1, int y1)
@@ -63,7 +75,7 @@ bool LevelOne::IsOnSolidGround(int x1, int y1)
     }
     else if(y1 == platform2_bottom)
     {
-         if(x1 > platform2 && x1 < platform2_)
+        if(x1 > platform2 && x1 < platform2_)
         {
             can_jump = true;
         }
@@ -86,13 +98,36 @@ bool LevelOne::IsOnSolidGround(int x1, int y1)
         {
             can_jump = false;
         }
-    }else if(y1 == platform5_bottom)
+    }
+    else if(y1 == platform5_bottom)
     {
         if(x1 > platform5 && x1 < platform5_)
         {
             can_jump = true;
         }
         else if(x1 > platform6 && x1 < platform6_)
+        {
+            can_jump = true;
+        }
+        else
+        {
+            can_jump = false;
+        }
+    }
+    else if(y1 == platform7_bottom)
+    {
+        if(x1 > platform7 && x1 < platform7_)
+        {
+            can_jump = true;
+        }
+        else
+        {
+            can_jump = false;
+        }
+    }
+    else if(y1 == platform8_bottom)
+    {
+        if(x1 > platform8)
         {
             can_jump = true;
         }
@@ -118,16 +153,9 @@ bool LevelOne::TheresRoof(int x1, int y1)
             return true;
         }
     }
-    else if(x1 > platform3 && x1 < platform3_)
-    {
-        if(y1 == platform3_top)
-        {
-            return true;
-        }
-    }
     else if(x1 > platform6 && x1 < platform6_)
     {
-        if(y1 == 290)
+        if(y1 == platform6_top)
         {
             return true;
         }

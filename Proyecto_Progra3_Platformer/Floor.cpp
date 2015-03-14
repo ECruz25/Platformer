@@ -2,9 +2,7 @@
 
 Floor::Floor()
 {
-
     level1 = new LevelOne;
-//    image = al_load_bitmap("assets/floor2.png");
 }
 
 Floor::~Floor()
