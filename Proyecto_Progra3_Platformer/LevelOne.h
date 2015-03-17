@@ -47,6 +47,8 @@ class LevelOne
         ALLEGRO_BITMAP* floor;
         ALLEGRO_BITMAP* floor1;
         ALLEGRO_BITMAP* floor2;
+        ALLEGRO_BITMAP* laptop;
+        ALLEGRO_BITMAP* background;
         void draw(ALLEGRO_DISPLAY* display);
         bool IsOnSolidGround(int x1, int y1);
         bool TheresRoof(int x1, int y1);

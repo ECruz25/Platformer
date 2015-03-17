@@ -21,8 +21,8 @@ class Player
         bool dead;
         int jumps;
         int frame;
-        int x;
-        int y;
+        float x, y;
+        float dx, dy;
         int h;
         int w;
         int level;
@@ -36,6 +36,9 @@ class Player
         void draw(ALLEGRO_DISPLAY* display);
         void act(ALLEGRO_EVENT event);
         void revive();
+
+//        42692
+
 //        bool IsOnSolidGround(int x1, int y1);
 //        bool TheresRoof(int x1, int y1);
     protected:
