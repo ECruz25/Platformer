@@ -27,11 +27,11 @@ void GameplayScreen::Draw(ALLEGRO_DISPLAY *display)
 {
 
     level = player->level;
-//
-////    cout<<"LEVELLLLLLLLLLLL: "<<level<<endl;
-//
+
+//    cout<<"LEVELLLLLLLLLLLL: "<<level<<endl;
+
     al_draw_bitmap(background, 0, 0, 0);
-//
+
     player->draw(display, 1);
     floor.draw(display, 1);
 
