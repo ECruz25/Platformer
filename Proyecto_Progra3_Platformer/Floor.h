@@ -1,10 +1,10 @@
 #ifndef FLOOR_H
 #define FLOOR_H
 
-#include "Character.h"
 #include "LevelOne.h"
+#include "LevelTwo.h"
 
-class Floor : public Character
+class Floor
 {
     public:
         Floor();
@@ -12,7 +12,8 @@ class Floor : public Character
         ALLEGRO_BITMAP* floor1;
         ALLEGRO_BITMAP* floor2;
         LevelOne* level1;
-        void draw(ALLEGRO_DISPLAY* display);
+        LevelTwo* level2;
+        void draw(ALLEGRO_DISPLAY* display, int level);
         void act(ALLEGRO_EVENT event);
         virtual ~Floor();
     protected:

@@ -7,6 +7,7 @@ LevelOne::LevelOne()
     floor2 = al_load_bitmap("assets/floor2.png");
     background = al_load_bitmap("assets/back.png");
     laptop = al_load_bitmap("assets/laptop.png");
+    wifi = al_load_bitmap("assets/Wifi.png");
 
     platform1 = 135;
     platform1_ = 755;
@@ -51,8 +52,8 @@ LevelOne::LevelOne()
 
 void LevelOne::draw(ALLEGRO_DISPLAY* display)
 {
-//    al_draw_bitmap(background, 0, 0, 0);
-    al_draw_bitmap(laptop, 650, 20, 0);
+    al_draw_bitmap(laptop, 620, 143, 0);
+//    al_draw_bitmap(wifi, 650, 40, 0);
     al_draw_bitmap(floor, 450, 368, 0);
     al_draw_bitmap(floor, 622, 268, 0);
     al_draw_bitmap(floor1, -500, 465, 0);
@@ -169,6 +170,14 @@ bool LevelOne::TheresRoof(int x1, int y1)
         return false;
     }
     return false;
+}
+
+void LevelOne::GoToNextLvl()
+{
+//    if(done)
+//    {
+//        return;
+//    }
 }
 
 LevelOne::~LevelOne()

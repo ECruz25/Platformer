@@ -18,6 +18,7 @@
 					<Add directory="../../../../../allegro-5.0.10-mingw-4.7.0/include" />
 					<Add directory="../../../../../allegro-5.0.10-mingw-4.7.0/lib" />
 					<Add directory="include" />
+					<Add directory="/home/edwin/Documents/Programacion 3/Platformer/Proyecto_Progra3_Platformer/" />
 				</Compiler>
 				<Linker>
 					<Add library="/home/edwin/allegro/build/lib/liballegro.so" />
@@ -42,6 +43,7 @@
 				<Compiler>
 					<Add option="-O2" />
 					<Add directory="include" />
+					<Add directory="/home/edwin/Documents/Programacion 3/Platformer/Proyecto_Progra3_Platformer/" />
 				</Compiler>
 				<Linker>
 					<Add option="-s" />
@@ -73,6 +75,10 @@
 		<Unit filename="InputManager.h" />
 		<Unit filename="LevelOne.cpp" />
 		<Unit filename="LevelOne.h" />
+		<Unit filename="LevelThree.cpp" />
+		<Unit filename="LevelThree.h" />
+		<Unit filename="LevelTwo.cpp" />
+		<Unit filename="LevelTwo.h" />
 		<Unit filename="Player.cpp" />
 		<Unit filename="Player.h" />
 		<Unit filename="ScreenManager.cpp" />

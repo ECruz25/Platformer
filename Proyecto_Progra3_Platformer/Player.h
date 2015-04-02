@@ -6,6 +6,8 @@
 #include "InputManager.h"
 #include "character.h"
 #include "LevelOne.h"
+#include "LevelTwo.h"
+#include "LevelThree.h"
 
 using namespace std;
 
@@ -14,33 +16,33 @@ class Player
     public:
         Player();
         LevelOne* level1;
+        LevelTwo* level2;
+        LevelThree* level3;
         ALLEGRO_EVENT event;
         ALLEGRO_BITMAP* image;
         InputManager input;
         vector<ALLEGRO_BITMAP*> images;
-        bool dead;
-        int jumps;
-        int frame;
         float x, y;
         float dx, dy;
         int h;
         int w;
         int level;
         int floor;
+        int jumps;
+        int frame;
         bool jumping;
         bool can_jump;
+        bool dead;
+        bool win;
         void jump();
         enum actions {LEFT, RIGHT};
-        bool keys[4] = {false, false};
+        bool keys[2] = {false, false};
         virtual ~Player();
-        void draw(ALLEGRO_DISPLAY* display);
+        void draw(ALLEGRO_DISPLAY* display, int level);
+        void Draw();
         void act(ALLEGRO_EVENT event);
+        bool won(int level_);
         void revive();
-
-//        42692
-
-//        bool IsOnSolidGround(int x1, int y1);
-//        bool TheresRoof(int x1, int y1);
     protected:
     private:
 };

@@ -23,6 +23,7 @@ class GameplayScreen : public GameScreen
         void Draw(ALLEGRO_DISPLAY *display);
         Player* player;
         int frame;
+        int level;
         Floor floor;
         ALLEGRO_BITMAP* enemy;
         ALLEGRO_BITMAP *background;

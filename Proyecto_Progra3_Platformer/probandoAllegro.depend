@@ -730,7 +730,7 @@
 1426188319 source:/home/edwin/Documents/Platformer/Proyecto_Progra3_Platformer/character.cpp
 	"character.h"
 
-1425942292 source:/home/edwin/Documents/Programacion 3/Platformer/Proyecto_Progra3_Platformer/Animation.cpp
+1427811622 source:/home/edwin/Documents/Programacion 3/Platformer/Proyecto_Progra3_Platformer/Animation.cpp
 	"Animation.h"
 
 1425942292 /home/edwin/Documents/Programacion 3/Platformer/Proyecto_Progra3_Platformer/Animation.h
@@ -787,17 +787,17 @@
 	<iostream>
 	<algorithm>
 
-1426357759 source:/home/edwin/Documents/Programacion 3/Platformer/Proyecto_Progra3_Platformer/Floor.cpp
+1427958052 source:/home/edwin/Documents/Programacion 3/Platformer/Proyecto_Progra3_Platformer/Floor.cpp
 	"Floor.h"
 
-1426346305 /home/edwin/Documents/Programacion 3/Platformer/Proyecto_Progra3_Platformer/Floor.h
-	"Character.h"
+1427957868 /home/edwin/Documents/Programacion 3/Platformer/Proyecto_Progra3_Platformer/Floor.h
 	"LevelOne.h"
+	"LevelTwo.h"
 
-1426596580 source:/home/edwin/Documents/Programacion 3/Platformer/Proyecto_Progra3_Platformer/GameplayScreen.cpp
+1427960883 source:/home/edwin/Documents/Programacion 3/Platformer/Proyecto_Progra3_Platformer/GameplayScreen.cpp
 	"GameplayScreen.h"
 
-1426345623 /home/edwin/Documents/Programacion 3/Platformer/Proyecto_Progra3_Platformer/GameplayScreen.h
+1427953648 /home/edwin/Documents/Programacion 3/Platformer/Proyecto_Progra3_Platformer/GameplayScreen.h
 	<allegro5/allegro_font.h>
 	<allegro5/allegro_ttf.h>
 	<allegro5/allegro_image.h>
@@ -835,11 +835,13 @@
 	"ScreenManager.h"
 	"InputManager.h"
 
-1426562654 /home/edwin/Documents/Programacion 3/Platformer/Proyecto_Progra3_Platformer/Player.h
+1427959114 /home/edwin/Documents/Programacion 3/Platformer/Proyecto_Progra3_Platformer/Player.h
 	<iostream>
 	"InputManager.h"
 	"character.h"
 	"LevelOne.h"
+	"LevelTwo.h"
+	"LevelThree.h"
 
 1425942292 source:/home/edwin/Documents/Programacion 3/Platformer/Proyecto_Progra3_Platformer/GameScreen.cpp
 	"GameScreen.h"
@@ -847,7 +849,7 @@
 1425942292 source:/home/edwin/Documents/Programacion 3/Platformer/Proyecto_Progra3_Platformer/InputManager.cpp
 	"InputManager.h"
 
-1426181856 source:/home/edwin/Documents/Programacion 3/Platformer/Proyecto_Progra3_Platformer/main.cpp
+1427956978 source:/home/edwin/Documents/Programacion 3/Platformer/Proyecto_Progra3_Platformer/main.cpp
 	<iostream>
 	<fstream>
 	"allegro5/allegro.h"
@@ -857,10 +859,12 @@
 	"allegro5/allegro_ttf.h"
 	"allegro5/allegro_acodec.h"
 	"allegro5/allegro_native_dialog.h"
+	"allegro5/allegro_audio.h"
+	"allegro5/allegro_acodec.h"
 	"ScreenManager.h"
 	"InputManager.h"
 
-1426562654 source:/home/edwin/Documents/Programacion 3/Platformer/Proyecto_Progra3_Platformer/Player.cpp
+1427959749 source:/home/edwin/Documents/Programacion 3/Platformer/Proyecto_Progra3_Platformer/Player.cpp
 	"Player.h"
 
 1426345752 source:/home/edwin/Documents/Programacion 3/Platformer/Proyecto_Progra3_Platformer/ScreenManager.cpp
@@ -872,11 +876,29 @@
 1425942292 source:/home/edwin/Documents/Programacion 3/Platformer/Proyecto_Progra3_Platformer/TitleScreen.cpp
 	"TitleScreen.h"
 
-1426596749 source:/home/edwin/Documents/Programacion 3/Platformer/Proyecto_Progra3_Platformer/LevelOne.cpp
+1427961669 source:/home/edwin/Documents/Programacion 3/Platformer/Proyecto_Progra3_Platformer/LevelOne.cpp
 	"LevelOne.h"
 
-1426596559 /home/edwin/Documents/Programacion 3/Platformer/Proyecto_Progra3_Platformer/LevelOne.h
+1427952413 /home/edwin/Documents/Programacion 3/Platformer/Proyecto_Progra3_Platformer/LevelOne.h
 	<iostream>
 	"allegro5/allegro.h"
 	"allegro5/allegro_image.h"
+
+1427961669 source:/home/edwin/Documents/Programacion 3/Platformer/Proyecto_Progra3_Platformer/LevelTwo.cpp
+	"LevelTwo.h"
+
+1427951238 /home/edwin/Documents/Programacion 3/Platformer/Proyecto_Progra3_Platformer/LevelTwo.h
+	<iostream>
+	"allegro5/allegro.h"
+	"allegro5/allegro_image.h"
+
+1427813909 /home/edwin/Documents/Programacion 3/Platformer/Proyecto_Progra3_Platformer/Levels.h
+
+1427958492 /home/edwin/Documents/Programacion 3/Platformer/Proyecto_Progra3_Platformer/LevelThree.h
+	<iostream>
+	"allegro5/allegro.h"
+	"allegro5/allegro_image.h"
+
+1427961669 source:/home/edwin/Documents/Programacion 3/Platformer/Proyecto_Progra3_Platformer/LevelThree.cpp
+	"LevelThree.h"
 
