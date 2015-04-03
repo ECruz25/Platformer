@@ -18,6 +18,7 @@ Player::Player()
     dead = false;
     frame = 0;
     image = al_load_bitmap("assets/Player/standing/1.png");
+    score = floor;
 }
 
 void Player::draw(ALLEGRO_DISPLAY* display, int level_)
@@ -110,12 +111,20 @@ void Player::draw(ALLEGRO_DISPLAY* display, int level_)
         }
         if(y>=740)
         {
+            if(frame > PrintScore())
+            {
+                Save();
+            }
             dead = true;
         }
     }
     else
     {
-        revive();
+        if(frame > PrintScore())
+        {
+            Save();
+        }
+        dead = true;
     }
     frame++;
 }
@@ -241,6 +250,23 @@ bool Player::won(int level_)
         break;
     }
     return false;
+}
+
+void Player::Save()
+{
+    cout<<"Saving..."<<endl;
+    ofstream o("Score.txt");
+    o<<frame;
+    o.close();
+}
+
+int Player::PrintScore()
+{
+    int Score;
+    ifstream i("Score.txt");
+    i>>Score;
+    i.close();
+    return Score;
 }
 
 Player::~Player()

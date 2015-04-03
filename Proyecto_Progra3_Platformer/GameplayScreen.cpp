@@ -25,14 +25,21 @@ void GameplayScreen::Update(ALLEGRO_EVENT ev)
 
 void GameplayScreen::Draw(ALLEGRO_DISPLAY *display)
 {
+    if(!player->dead && !player->win)
+    {
+        level = player->level;
 
-    level = player->level;
+        al_draw_bitmap(background, 0, 0, 0);
 
-//    cout<<"LEVELLLLLLLLLLLL: "<<level<<endl;
+        player->draw(display, level);
+        floor.draw(display, level);
+    }
+    else if(player->dead)
+    {
+        ScreenManager::GetInstance().AddScreen(new EndScreen);
+    }
+    else if(player->win)
+    {
 
-    al_draw_bitmap(background, 0, 0, 0);
-
-    player->draw(display, 1);
-    floor.draw(display, 1);
-
+    }
 }

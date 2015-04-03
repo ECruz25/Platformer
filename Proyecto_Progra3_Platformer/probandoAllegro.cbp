@@ -59,6 +59,8 @@
 		<Unit filename="Animation.h" />
 		<Unit filename="Character.cpp" />
 		<Unit filename="Character.h" />
+		<Unit filename="EndScreen.cpp" />
+		<Unit filename="EndScreen.h" />
 		<Unit filename="Enemy.cpp" />
 		<Unit filename="Enemy.h" />
 		<Unit filename="FadeAnimation.cpp" />
@@ -79,6 +81,8 @@
 		<Unit filename="LevelThree.h" />
 		<Unit filename="LevelTwo.cpp" />
 		<Unit filename="LevelTwo.h" />
+		<Unit filename="MenuScreen.cpp" />
+		<Unit filename="MenuScreen.h" />
 		<Unit filename="Player.cpp" />
 		<Unit filename="Player.h" />
 		<Unit filename="ScreenManager.cpp" />

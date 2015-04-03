@@ -2,6 +2,11 @@
 #define PLAYER_H
 
 #include <iostream>
+#include <fstream>
+#include <sstream>
+
+#include <allegro5/allegro_font.h>
+#include <allegro5/allegro_ttf.h>
 
 #include "InputManager.h"
 #include "character.h"
@@ -20,8 +25,11 @@ class Player
         LevelThree* level3;
         ALLEGRO_EVENT event;
         ALLEGRO_BITMAP* image;
+        ALLEGRO_FONT *font;
         InputManager input;
         vector<ALLEGRO_BITMAP*> images;
+        string score;
+        ostringstream oss;
         float x, y;
         float dx, dy;
         int h;
@@ -40,6 +48,8 @@ class Player
         virtual ~Player();
         void draw(ALLEGRO_DISPLAY* display, int level);
         void Draw();
+        void Save();
+        int PrintScore();
         void act(ALLEGRO_EVENT event);
         bool won(int level_);
         void revive();
