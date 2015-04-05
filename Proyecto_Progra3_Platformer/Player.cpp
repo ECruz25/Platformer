@@ -6,8 +6,21 @@ Player::Player()
     level2 = new LevelTwo;
     level3 = new LevelThree;
 
-    y = 490;
-    x = 680;
+    dir = 1;
+
+    PrintScore();
+
+    images_derecha[0] = al_load_bitmap("assets/Player/run/run/1.png");
+    images_derecha[1] = al_load_bitmap("assets/Player/run/run/2.png");
+    images_derecha[2] = al_load_bitmap("assets/Player/run/run/3.png");
+
+    images_izquierda[0]= al_load_bitmap("assets/Player/run/run_left/1.png");
+    images_izquierda[1]= al_load_bitmap("assets/Player/run/run_left/2.png");
+    images_izquierda[2]= al_load_bitmap("assets/Player/run/run_left/3.png");
+
+    comma = ",";
+    y = 540;
+    x = 640;
     w = 75;
     h = 30;
     floor = 540;
@@ -18,14 +31,24 @@ Player::Player()
     dead = false;
     frame = 0;
     image = al_load_bitmap("assets/Player/standing/1.png");
-    score = floor;
 }
 
 void Player::draw(ALLEGRO_DISPLAY* display, int level_)
 {
-    al_draw_bitmap(image, x, y, 0);
+    if(keys[LEFT])
+    {
+        al_draw_bitmap(images_izquierda[curFrame], x, y, 0);
+    }
+    else if(keys[RIGHT])
+    {
+        al_draw_bitmap(images_derecha[curFrame], x, y, 0);
+    }
+    else
+    {
+        al_draw_bitmap(image, x, y, 0);
+    }
 
-    if(!dead)
+    if(!dead && !won(level_))
     {
         if(frame%5==0)
         {
@@ -107,23 +130,55 @@ void Player::draw(ALLEGRO_DISPLAY* display, int level_)
                         y+=50;
                     }
                 break;
+                case 3:
+                    if(jumping)
+                    {
+                        if(jumps<3)
+                        {
+                            if(!won(level_))
+                            {
+                                if(!level3->TheresRoof(x,y))
+                                {
+                                    y-=50;
+                                    jumps++;
+                                }
+                                else
+                                {
+                                    y+=50;
+                                    jumps=3;
+                                }
+                            }
+                        }
+                        else
+                        {
+                            jumping = false;
+
+                            if(!level3->IsOnSolidGround(x,y))
+                            {
+                                y+=50;
+                            }
+                        }
+                        if(y > floor)
+                        {
+                            jumping = false;
+                        }
+                    }
+                    else if(!level3->IsOnSolidGround(x,y) && !jumping)
+                    {
+                        y+=50;
+                    }
+                break;
             }
         }
         if(y>=740)
         {
-            if(frame > PrintScore())
-            {
-                Save();
-            }
             dead = true;
         }
     }
-    else
+    else if(!won(level_))
     {
-        if(frame > PrintScore())
-        {
-            Save();
-        }
+//        Save();
+        cout<<"por accaaaaaaaaaaaa"<<endl;
         dead = true;
     }
     frame++;
@@ -136,7 +191,7 @@ void Player::Draw()
 
 void Player::act(ALLEGRO_EVENT ev)
 {
-    cout<<"("<<x<<","<<y<<")"<<endl;
+//    cout<<"("<<x<<","<<y<<")"<<endl;
 
     if(input.IsKeyPressed(ev, ALLEGRO_KEY_SPACE))
     {
@@ -144,18 +199,15 @@ void Player::act(ALLEGRO_EVENT ev)
     }
     else if(input.IsKeyPressed(ev, ALLEGRO_KEY_D))
     {
-        image = al_load_bitmap("assets/Player/standing/1.png");
-
         keys[RIGHT] = true;
     }
     else if(input.IsKeyPressed(ev, ALLEGRO_KEY_A) )
     {
-        image = al_load_bitmap("assets/Player/standing/2.png");
-
         keys[LEFT] = true;
     }
     else if(input.IsKeyReleased(ev, ALLEGRO_KEY_D))
     {
+        image = al_load_bitmap("assets/Player/standing/1.png");
         keys[RIGHT] = false;
     }
     else if(input.IsKeyReleased(ev, ALLEGRO_KEY_W))
@@ -168,9 +220,19 @@ void Player::act(ALLEGRO_EVENT ev)
     }
     else if(input.IsKeyReleased(ev, ALLEGRO_KEY_A))
     {
+        image = al_load_bitmap("assets/Player/standing/2.png");
         keys[LEFT] = false;
     }
+    else if(ev.type == ALLEGRO_EVENT_TIMER)
+    {
+        if(++frameCount >= frameDelay)
+        {
+            if(++curFrame >= maxFrame)
+                curFrame = 0;
 
+            frameCount = 0;
+        }
+    }
     if(keys[RIGHT])
     {
         if(x > level1->platform1_)
@@ -206,6 +268,16 @@ void Player::jump()
         jumps = 0;
         jumping = true;
     }
+    else if(level2->IsOnSolidGround(x,y))
+    {
+        jumps = 0;
+        jumping = true;
+    }
+    else if(level3->IsOnSolidGround(x,y))
+    {
+        jumps = 0;
+        jumping = true;
+    }
     else
     {
         jumping = false;
@@ -224,49 +296,82 @@ bool Player::won(int level_)
     switch(level_)
     {
         case 1:
-            if(y == 140 && (x>605 && x<635))
+            if(y == level1->laptopy && (x>level1->laptopx-5 && x<level1->laptopx+5))
             {
+                cout<<"pasar al 2do nivel"<<endl;
                 level = 2;
-                y = 490;
-                x = 680;
-                return true;
+                y = 540;
+                x = 640;
+                win = false;
+                return win;
             }
         break;
         case 2:
-            if(y == 140 && (x>605 && x<635))
+            if(y == level2->laptopy &&  (x>level2->laptopx-5 && x<level2->laptopx+5))
             {
                 level = 3;
-                y = 490;
-                x = 680;
-                return true;
+                y = 540;
+                x = 640;
+                win = false;
+                return win;
             }
         break;
         case 3:
-            if(y == 140 && (x>605 && x<635))
+            if(y == level3->laptopy &&  (x>level3->laptopx-5 && x<level3->laptopx+5))
             {
+                Save();
                 win = true;
-                return true;
+                return win;
             }
         break;
     }
-    return false;
+    return win;
 }
 
 void Player::Save()
 {
-    cout<<"Saving..."<<endl;
+    if(frame<score1)
+    {
+        score3 = score2;
+        score2 = score1;
+        score1 = frame;
+    }
+    else if(frame<score2)
+    {
+        score3 = score2;
+        score2 = frame;
+    }
+    else if(frame<score3)
+    {
+        score3 = frame;
+    }
     ofstream o("Score.txt");
-    o<<frame;
+    o<<score1<<'\n';
+    o<<score2<<'\n';
+    o<<score3<<'\n';
     o.close();
 }
 
-int Player::PrintScore()
+void Player::PrintScore()
 {
-    int Score;
     ifstream i("Score.txt");
-    i>>Score;
+    i>>score1;
+    i>>score2;
+    i>>score3;
     i.close();
-    return Score;
+}
+
+void Player::UnloadContent()
+{
+    level1->UnloadContent();
+//    level2->UnloadContent();
+//    level3->UnloadContent();
+//    al_destroy_bitmap(image);
+//    for(int i = 0; i<maxFrame; i++)
+//    {
+//        al_destroy_bitmap(images_derecha[i]);
+//        al_destroy_bitmap(images_izquierda[i]);
+//    }
 }
 
 Player::~Player()

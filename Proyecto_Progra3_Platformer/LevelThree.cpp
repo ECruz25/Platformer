@@ -5,7 +5,7 @@ LevelThree::LevelThree()
     floor = al_load_bitmap("assets/floor.png");
     floor1 = al_load_bitmap("assets/floor_2.png");
     floor2 = al_load_bitmap("assets/floor2.png");
-    background = al_load_bitmap("assets/back.png");
+    background = al_load_bitmap("assets/background3.png");
     laptop = al_load_bitmap("assets/laptop.png");
     wifi = al_load_bitmap("assets/Wifi.png");
 
@@ -48,12 +48,28 @@ LevelThree::LevelThree()
     platform8_ = 405;
     platform8_top = 290;
     platform8_bottom = 40;
+
+    wifix = 650;
+    wifiy = 40;
+    laptopx = 620;
+    laptopy = 143;
+}
+
+void LevelThree::UnloadContent()
+{
+    al_destroy_bitmap(floor);
+    al_destroy_bitmap(floor1);
+    al_destroy_bitmap(floor2);
+    al_destroy_bitmap(background);
+    al_destroy_bitmap(laptop);
+    al_destroy_bitmap(wifi);
 }
 
 void LevelThree::draw(ALLEGRO_DISPLAY* display)
 {
-    al_draw_bitmap(laptop, 620, 143, 0);
-//    al_draw_bitmap(wifi, 650, 40, 0);
+    al_draw_bitmap(background, 0, 0, 0);
+    al_draw_bitmap(laptop, laptopx, laptopy, 0);
+    al_draw_bitmap(wifi, wifix, wifiy, 0);
     al_draw_bitmap(floor, 450, 368, 0);
     al_draw_bitmap(floor, 622, 268, 0);
     al_draw_bitmap(floor1, -500, 465, 0);
@@ -151,6 +167,13 @@ bool LevelThree::IsOnSolidGround(int x1, int y1)
 
 bool LevelThree::TheresRoof(int x1, int y1)
 {
+    if(x1 > platform1 && x1 < platform1_)
+    {
+        if(y1 == platform1_top)
+        {
+            return true;
+        }
+    }
     if(x1 > platform2 && x1 < platform2_)
     {
         if(y1 == platform2_top)
@@ -158,16 +181,47 @@ bool LevelThree::TheresRoof(int x1, int y1)
             return true;
         }
     }
-    else if(x1 > platform6 && x1 < platform6_)
+    if(x1 > platform3 && x1 < platform3_)
+    {
+        if(y1 == platform3_top)
+        {
+            return true;
+        }
+    }
+    if(x1 > platform4 && x1 < platform4_)
+    {
+        if(y1 == platform4_top)
+        {
+            return true;
+        }
+    }
+    if(x1 > platform5 && x1 < platform5_)
+    {
+        if(y1 == platform5_top)
+        {
+            return true;
+        }
+    }
+    if(x1 > platform6 && x1 < platform6_)
     {
         if(y1 == platform6_top)
         {
             return true;
         }
     }
-    else
+    if(x1 > platform7 && x1 < platform7_)
     {
-        return false;
+        if(y1 == platform7_top)
+        {
+            return true;
+        }
+    }
+    if(x1 > platform8 && x1 < platform8_)
+    {
+        if(y1 == platform8_top)
+        {
+            return true;
+        }
     }
     return false;
 }

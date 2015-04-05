@@ -26,8 +26,6 @@ class GameplayScreen : public GameScreen
         int frame;
         int level;
         Floor floor;
-        ALLEGRO_BITMAP* enemy;
-        ALLEGRO_BITMAP *background;
     protected:
     private:
 };

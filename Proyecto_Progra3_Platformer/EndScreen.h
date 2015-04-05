@@ -18,18 +18,24 @@ class EndScreen : public GameScreen
 {
     public:
         EndScreen();
+        ALLEGRO_BITMAP *background;
         ALLEGRO_FONT *font;
-        Player player;
         Floor floor;
-        ostringstream oss;
-        int score;
-        string str_score;
+        ostringstream oss1;
+        ostringstream oss2;
+        ostringstream oss3;
+        int score1;
+        int score2;
+        int score3;
+        string str_score1;
+        string str_score2;
+        string str_score3;
         void LoadContent();
         void UnloadContent();
         void Update(ALLEGRO_EVENT ev);
         void Draw(ALLEGRO_DISPLAY *display);
         void Save();
-        int PrintScore();
+        void PrintScore();
         string PrintName();
         virtual ~EndScreen();
     protected:

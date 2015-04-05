@@ -1,13 +1,11 @@
 #ifndef LEVELTWO_H
 #define LEVELTWO_H
 
-#include<iostream>
-#include "allegro5/allegro.h"
-#include "allegro5/allegro_image.h"
+#include "Levels.h"
 
 using namespace std;
 
-class LevelTwo
+class LevelTwo : public Levels
 {
     public:
         LevelTwo();
@@ -44,6 +42,10 @@ class LevelTwo
         int platform8_top;
         int platform8_bottom;
         bool can_jump;
+        int laptopx;
+        int laptopy;
+        int wifix;
+        int wifiy;
         ALLEGRO_BITMAP* floor;
         ALLEGRO_BITMAP* floor1;
         ALLEGRO_BITMAP* floor2;
@@ -53,6 +55,7 @@ class LevelTwo
         void draw(ALLEGRO_DISPLAY* display);
         bool IsOnSolidGround(int x1, int y1);
         bool TheresRoof(int x1, int y1);
+        void UnloadContent();
         virtual ~LevelTwo();
     protected:
     private:

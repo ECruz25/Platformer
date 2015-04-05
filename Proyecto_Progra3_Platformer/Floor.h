@@ -3,18 +3,18 @@
 
 #include "LevelOne.h"
 #include "LevelTwo.h"
+#include "LevelThree.h"
 
 class Floor
 {
     public:
         Floor();
-        ALLEGRO_BITMAP* floor;
-        ALLEGRO_BITMAP* floor1;
-        ALLEGRO_BITMAP* floor2;
         LevelOne* level1;
         LevelTwo* level2;
+        LevelThree* level3;
         void draw(ALLEGRO_DISPLAY* display, int level);
         void act(ALLEGRO_EVENT event);
+        void UnloadContent();
         virtual ~Floor();
     protected:
     private:

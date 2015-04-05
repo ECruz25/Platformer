@@ -8,6 +8,7 @@
 #include "SplashScreen.h"
 #include "GameplayScreen.h"
 #include "MenuScreen.h"
+#include "InstruccionesScreen.h"
 #include "FadeAnimation.h"
 
 class ScreenManager

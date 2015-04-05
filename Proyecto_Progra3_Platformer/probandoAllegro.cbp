@@ -75,12 +75,16 @@
 		<Unit filename="GameplayScreen.h" />
 		<Unit filename="InputManager.cpp" />
 		<Unit filename="InputManager.h" />
+		<Unit filename="InstruccionesScreen.cpp" />
+		<Unit filename="InstruccionesScreen.h" />
 		<Unit filename="LevelOne.cpp" />
 		<Unit filename="LevelOne.h" />
 		<Unit filename="LevelThree.cpp" />
 		<Unit filename="LevelThree.h" />
 		<Unit filename="LevelTwo.cpp" />
 		<Unit filename="LevelTwo.h" />
+		<Unit filename="Levels.cpp" />
+		<Unit filename="Levels.h" />
 		<Unit filename="MenuScreen.cpp" />
 		<Unit filename="MenuScreen.h" />
 		<Unit filename="Player.cpp" />

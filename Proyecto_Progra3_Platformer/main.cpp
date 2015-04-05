@@ -29,62 +29,28 @@ int main() {
 
     ALLEGRO_DISPLAY *display;
 
-
     ALLEGRO_SAMPLE *sample;
 
-    if(!al_init()){
-      fprintf(stderr, "failed to initialize allegro!\n");
-      return -1;
-    }
-
-//necesario
-
-    if(!al_install_audio()){
-      fprintf(stderr, "failed to initialize audio!\n");
-      return -1;
-    }
-
-    if(!al_init_acodec_addon()){
-      fprintf(stderr, "failed to initialize audio codecs!\n");
-      return -1;
-    }
-
-    if (!al_reserve_samples(1)){
-      fprintf(stderr, "failed to reserve samples!\n");
-      return -1;
-    }
+    al_init();
+    al_install_audio();
+    al_init_acodec_addon();
+    al_reserve_samples(1);
 
     sample = al_load_sample( "fight.wav" );
 
-//necesario
-
-
     display = al_create_display(width,height);
-
-    if(!display)
-    {
-        al_show_native_message_box(NULL, NULL, NULL,
-                                   "failed to initialize allegro!", NULL, NULL);
-        return -1;
-    }
-
-//    sample = al_load_sample("fight.wav" );
 
     al_set_window_position(display, 100, 100);
 
     al_install_keyboard();
     al_install_mouse();
-
-//    al_install_audio(ALLEGRO_AUDIO_DRIVER_AUTODETECT);
-//    al_reserve_samples(8);
-
     al_init_image_addon();
     al_init_acodec_addon();
 
     al_init_font_addon();
     al_init_ttf_addon();
 
-    al_play_sample(sample, 1, 0, 1, ALLEGRO_PLAYMODE_LOOP,NULL);
+//    al_play_sample(sample, 1, 0, 1, ALLEGRO_PLAYMODE_LOOP,NULL);
 
     ALLEGRO_TIMER *timer = al_create_timer(1.0f / kFPS);
     ALLEGRO_EVENT_QUEUE *event_queue = al_create_event_queue();
@@ -110,7 +76,6 @@ int main() {
         ALLEGRO_EVENT ev;
         al_wait_for_event(event_queue, &ev);
         al_get_keyboard_state(&keystate);
-//        al_draw_bitmap(image, 160, 565, 0);
 
         if(ev.type == ALLEGRO_EVENT_DISPLAY_CLOSE)
         {

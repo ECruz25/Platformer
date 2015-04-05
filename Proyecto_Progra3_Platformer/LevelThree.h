@@ -1,13 +1,11 @@
 #ifndef LEVELTHREE_H
 #define LEVELTHREE_H
 
-#include<iostream>
-#include "allegro5/allegro.h"
-#include "allegro5/allegro_image.h"
+#include "Levels.h"
 
 using namespace std;
 
-class LevelThree
+class LevelThree : public Levels
 {
     public:
         LevelThree();
@@ -43,6 +41,10 @@ class LevelThree
         int platform8_;
         int platform8_top;
         int platform8_bottom;
+        int laptopx;
+        int laptopy;
+        int wifix;
+        int wifiy;
         bool can_jump;
         ALLEGRO_BITMAP* floor;
         ALLEGRO_BITMAP* floor1;
@@ -53,6 +55,7 @@ class LevelThree
         void draw(ALLEGRO_DISPLAY* display);
         bool IsOnSolidGround(int x1, int y1);
         bool TheresRoof(int x1, int y1);
+        void UnloadContent();
         virtual ~LevelThree();
     protected:
     private:

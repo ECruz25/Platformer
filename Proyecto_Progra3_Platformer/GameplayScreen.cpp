@@ -3,7 +3,6 @@ GameplayScreen::GameplayScreen()
 {
     player = new Player;
     frame = 0;
-    background = al_load_bitmap("assets/back.png");
 }
 
 GameplayScreen::~GameplayScreen()
@@ -16,6 +15,8 @@ void GameplayScreen::LoadContent()
 
 void GameplayScreen::UnloadContent()
 {
+    player->UnloadContent();
+    floor.UnloadContent();
 }
 
 void GameplayScreen::Update(ALLEGRO_EVENT ev)
@@ -25,17 +26,15 @@ void GameplayScreen::Update(ALLEGRO_EVENT ev)
 
 void GameplayScreen::Draw(ALLEGRO_DISPLAY *display)
 {
+    level = player->level;
     if(!player->dead && !player->win)
     {
-        level = player->level;
-
-        al_draw_bitmap(background, 0, 0, 0);
-
-        player->draw(display, level);
         floor.draw(display, level);
+        player->draw(display, level);
     }
     else if(player->dead)
     {
+//        UnloadContent();
         ScreenManager::GetInstance().AddScreen(new EndScreen);
     }
     else if(player->win)
