@@ -350,22 +350,22 @@ bool Player::won(int level_)
 
 void Player::Save()
 {
-    if(frame<score1)
+    if(score>score1)
     {
         score3 = score2;
         score2 = score1;
-        score1 = frame;
+        score1 = score;
     }
-    else if(frame<score2)
+    else if(score>score2)
     {
         score3 = score2;
-        score2 = frame;
+        score2 = score;
     }
-    else if(frame<score3)
+    else if(score>score3)
     {
-        score3 = frame;
+        score3 = score;
     }
-    ofstream o("Score.txt");
+    ofstream o("assets/Score.txt");
     o<<score1<<'\n';
     o<<score2<<'\n';
     o<<score3<<'\n';
@@ -374,7 +374,7 @@ void Player::Save()
 
 void Player::PrintScore()
 {
-    ifstream i("Score.txt");
+    ifstream i("assets/Score.txt");
     i>>score1;
     i>>score2;
     i>>score3;
@@ -412,14 +412,6 @@ void Player::AddPoints(int level_)
 void Player::UnloadContent()
 {
     level1->UnloadContent();
-//    level2->UnloadContent();
-//    level3->UnloadContent();
-//    al_destroy_bitmap(image);
-//    for(int i = 0; i<maxFrame; i++)
-//    {
-//        al_destroy_bitmap(images_derecha[i]);
-//        al_destroy_bitmap(images_izquierda[i]);
-//    }
 }
 
 Player::~Player()

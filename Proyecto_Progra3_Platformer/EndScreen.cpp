@@ -49,7 +49,7 @@ void EndScreen::Draw(ALLEGRO_DISPLAY *display)
 
 void EndScreen::PrintScore()
 {
-    ifstream i("Score.txt");
+    ifstream i("assets/Score.txt");
     i>>score1;
     i>>score2;
     i>>score3;

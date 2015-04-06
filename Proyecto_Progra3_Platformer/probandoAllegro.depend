@@ -873,10 +873,10 @@
 	"ScreenManager.h"
 	"InputManager.h"
 
-1428298533 source:/home/edwin/Documents/Programacion 3/Platformer/Proyecto_Progra3_Platformer/Player.cpp
+1428306243 source:/home/edwin/Documents/Programacion 3/Platformer/Proyecto_Progra3_Platformer/Player.cpp
 	"Player.h"
 
-1428218245 source:/home/edwin/Documents/Programacion 3/Platformer/Proyecto_Progra3_Platformer/ScreenManager.cpp
+1428306086 source:/home/edwin/Documents/Programacion 3/Platformer/Proyecto_Progra3_Platformer/ScreenManager.cpp
 	"ScreenManager.h"
 
 1428136434 source:/home/edwin/Documents/Programacion 3/Platformer/Proyecto_Progra3_Platformer/SplashScreen.cpp
@@ -908,7 +908,7 @@
 1428226315 source:/home/edwin/Documents/Programacion 3/Platformer/Proyecto_Progra3_Platformer/LevelThree.cpp
 	"LevelThree.h"
 
-1428300163 source:/home/edwin/Documents/Programacion 3/Platformer/Proyecto_Progra3_Platformer/MenuScreen.cpp
+1428305579 source:/home/edwin/Documents/Programacion 3/Platformer/Proyecto_Progra3_Platformer/MenuScreen.cpp
 	"MenuScreen.h"
 
 1428218062 /home/edwin/Documents/Programacion 3/Platformer/Proyecto_Progra3_Platformer/MenuScreen.h
@@ -916,7 +916,7 @@
 	"ScreenManager.h"
 	"InputManager.h"
 
-1428228225 source:/home/edwin/Documents/Programacion 3/Platformer/Proyecto_Progra3_Platformer/EndScreen.cpp
+1428306243 source:/home/edwin/Documents/Programacion 3/Platformer/Proyecto_Progra3_Platformer/EndScreen.cpp
 	"EndScreen.h"
 
 1428135450 /home/edwin/Documents/Programacion 3/Platformer/Proyecto_Progra3_Platformer/EndScreen.h
@@ -944,10 +944,10 @@
 	"SplashScreen.h"
 	"EndScreen.h"
 
-1428299179 source:/home/edwin/Documents/Programacion 3/Platformer/Proyecto_Progra3_Platformer/WinScreen.cpp
+1428305913 source:/home/edwin/Documents/Programacion 3/Platformer/Proyecto_Progra3_Platformer/WinScreen.cpp
 	"WinScreen.h"
 
-1428298847 /home/edwin/Documents/Programacion 3/Platformer/Proyecto_Progra3_Platformer/WinScreen.h
+1428305477 /home/edwin/Documents/Programacion 3/Platformer/Proyecto_Progra3_Platformer/WinScreen.h
 	<fstream>
 	<allegro5/allegro_font.h>
 	<allegro5/allegro_ttf.h>

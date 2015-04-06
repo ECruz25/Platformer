@@ -14,7 +14,7 @@ void MenuScreen::LoadContent()
 void MenuScreen::Draw(ALLEGRO_DISPLAY *display)
 {
     al_draw_bitmap(menu_background, 0, 0, 0);
-    al_draw_bitmap(title[curFrame], 200, 0, 0);
+    al_draw_bitmap(title[curFrame], 100, -50, 0);
 }
 
 void MenuScreen::UnloadContent()

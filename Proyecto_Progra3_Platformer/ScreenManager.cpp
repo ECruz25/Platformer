@@ -31,7 +31,7 @@ void ScreenManager::AddScreen(GameScreen *screen)
 
 void ScreenManager::Initialize()
 {
-    CurrentScreen = new GameplayScreen;
+    CurrentScreen = new MenuScreen;
 }
 
 void ScreenManager::LoadContent()
