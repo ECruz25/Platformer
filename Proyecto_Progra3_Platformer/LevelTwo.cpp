@@ -6,8 +6,10 @@ LevelTwo::LevelTwo()
     floor1 = al_load_bitmap("assets/floor_2.png");
     floor2 = al_load_bitmap("assets/floor2.png");
     background = al_load_bitmap("assets/background2.png");
-    laptop = al_load_bitmap("assets/laptop.png");
-    wifi = al_load_bitmap("assets/Wifi.png");
+    laptop = al_load_bitmap("assets/phone.png");
+    wifi[0] = al_load_bitmap("assets/Wifi.png");
+    wifi[1] = al_load_bitmap("assets/Wif2i.png");
+    wifi[2] = al_load_bitmap("assets/Wifi.png");
 
     platform1 = 475; //475
     platform1_ = 755;
@@ -62,13 +64,13 @@ void LevelTwo::UnloadContent()
     al_destroy_bitmap(floor2);
     al_destroy_bitmap(background);
     al_destroy_bitmap(laptop);
-    al_destroy_bitmap(wifi);
+//    al_destroy_bitmap(wifi);
 }
 
 void LevelTwo::draw(ALLEGRO_DISPLAY* display)
 {
     al_draw_bitmap(background, 0, 0, 0);
-    al_draw_bitmap(wifi, wifix, wifiy, 0);//nivel 6
+//    al_draw_bitmap(wifi, wifix, wifiy, 0);//nivel 6
     al_draw_bitmap(floor1, -300, 65, 0);//nivel 6
     al_draw_bitmap(laptop, laptopx, laptopy, 0);//nivel 5
     al_draw_bitmap(floor1, -150, 165, 0);//nivel 5

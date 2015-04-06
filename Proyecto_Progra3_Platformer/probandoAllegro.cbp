@@ -95,6 +95,8 @@
 		<Unit filename="SplashScreen.h" />
 		<Unit filename="TitleScreen.cpp" />
 		<Unit filename="TitleScreen.h" />
+		<Unit filename="WinScreen.cpp" />
+		<Unit filename="WinScreen.h" />
 		<Unit filename="character.cpp" />
 		<Unit filename="character.h" />
 		<Unit filename="main.cpp" />

@@ -4,6 +4,11 @@ MenuScreen::MenuScreen()
 {
     title[0] = al_load_bitmap("assets/title1.png");
     title[1] = al_load_bitmap("assets/title2.png");
+
+    player[0] = al_load_bitmap("assets/Player/run/run/1.png");
+    player[1] = al_load_bitmap("assets/Player/run/run/2.png");
+//    player[2] = al_load_bitmap("assets/Player/run/run/3.png");
+
 }
 
 void MenuScreen::LoadContent()
@@ -15,6 +20,7 @@ void MenuScreen::Draw(ALLEGRO_DISPLAY *display)
 {
     al_draw_bitmap(menu_background, 0, 0, 0);
     al_draw_bitmap(title[curFrame], 100, -50, 0);
+    al_draw_bitmap(player[curFrame], 550, 500, 0);
 }
 
 void MenuScreen::UnloadContent()

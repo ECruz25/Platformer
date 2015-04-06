@@ -12,6 +12,10 @@ Player::Player()
 
     score = 0;
 
+    copter[0] = al_load_bitmap("assets/helicoptero/helicoptero01.png");
+    copter[1] = al_load_bitmap("assets/helicoptero/helicoptero02.png");
+    copter[2] = al_load_bitmap("assets/helicoptero/helicoptero03.png");
+
     images_derecha[0] = al_load_bitmap("assets/Player/run/run/1.png");
     images_derecha[1] = al_load_bitmap("assets/Player/run/run/2.png");
     images_derecha[2] = al_load_bitmap("assets/Player/run/run/3.png");
@@ -39,6 +43,8 @@ Player::Player()
 void Player::draw(ALLEGRO_DISPLAY* display, int level_)
 {
     AddPoints(level_);
+//    cout<<score<<endl;
+    al_draw_bitmap(copter[curFrame], 15, 15, ALLEGRO_FLIP_HORIZONTAL);
     if(keys[LEFT])
     {
         al_draw_bitmap(images_izquierda[curFrame], x, y, 0);
@@ -56,13 +62,13 @@ void Player::draw(ALLEGRO_DISPLAY* display, int level_)
         switch(level_)
         {
             case 1:
-                al_draw_bitmap(level1->wifi, level1->wifix, level1->wifiy, 0);
+                al_draw_bitmap(level1->wifi[curFrame], level1->wifix, level1->wifiy, 0);
             break;
             case 2:
-                al_draw_bitmap(level2->wifi, level2->wifix, level2->wifiy, 0);
+                al_draw_bitmap(level2->wifi[curFrame], level2->wifix, level2->wifiy, 0);
             break;
             case 3:
-                al_draw_bitmap(level3->wifi, level3->wifix, level3->wifiy, 0);
+                al_draw_bitmap(level3->wifi[curFrame], level3->wifix, level3->wifiy, 0);
             break;
         }
     }
@@ -191,11 +197,13 @@ void Player::draw(ALLEGRO_DISPLAY* display, int level_)
         }
         if(y>=740)
         {
+            Save();
             dead = true;
         }
     }
     else
     {
+        Save();
         dead = true;
     }
     frame++;

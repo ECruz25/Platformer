@@ -7,7 +7,9 @@ LevelOne::LevelOne()
     floor2 = al_load_bitmap("assets/floor2.png");
     background = al_load_bitmap("assets/back.png");
     laptop = al_load_bitmap("assets/laptop.png");
-    wifi = al_load_bitmap("assets/Wifi.png");
+    wifi[0] = al_load_bitmap("assets/Wifi.png");
+    wifi[1] = al_load_bitmap("assets/Wif2i.png");
+    wifi[2] = al_load_bitmap("assets/Wifi.png");
 
     platform1 = 135;
     platform1_ = 755;

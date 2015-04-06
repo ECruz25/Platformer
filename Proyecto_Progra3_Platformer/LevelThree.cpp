@@ -7,7 +7,9 @@ LevelThree::LevelThree()
     floor2 = al_load_bitmap("assets/floor2.png");
     background = al_load_bitmap("assets/background3.png");
     laptop = al_load_bitmap("assets/laptop.png");
-    wifi = al_load_bitmap("assets/Wifi.png");
+    wifi[0] = al_load_bitmap("assets/Wifi.png");
+    wifi[1] = al_load_bitmap("assets/Wif2i.png");
+    wifi[2] = al_load_bitmap("assets/Wifi.png");
 
     platform1 = 135;
     platform1_ = 755;
@@ -57,19 +59,13 @@ LevelThree::LevelThree()
 
 void LevelThree::UnloadContent()
 {
-    al_destroy_bitmap(floor);
-    al_destroy_bitmap(floor1);
-    al_destroy_bitmap(floor2);
-    al_destroy_bitmap(background);
-    al_destroy_bitmap(laptop);
-    al_destroy_bitmap(wifi);
 }
 
 void LevelThree::draw(ALLEGRO_DISPLAY* display)
 {
     al_draw_bitmap(background, 0, 0, 0);
     al_draw_bitmap(laptop, laptopx, laptopy, 0);
-    al_draw_bitmap(wifi, wifix, wifiy, 0);
+//    al_draw_bitmap(wifi, wifix, wifiy, 0);
     al_draw_bitmap(floor, 450, 368, 0);
     al_draw_bitmap(floor, 622, 268, 0);
     al_draw_bitmap(floor1, -500, 465, 0);

@@ -36,7 +36,7 @@ int main() {
     al_init_acodec_addon();
     al_reserve_samples(1);
 
-    sample = al_load_sample( "fight.wav" );
+    sample = al_load_sample("assets/fight.wav");
 
     display = al_create_display(width,height);
 
@@ -50,7 +50,7 @@ int main() {
     al_init_font_addon();
     al_init_ttf_addon();
 
-//    al_play_sample(sample, 1, 0, 1, ALLEGRO_PLAYMODE_LOOP,NULL);
+    al_play_sample(sample, 1, 0, 1, ALLEGRO_PLAYMODE_LOOP,NULL);
 
     ALLEGRO_TIMER *timer = al_create_timer(1.0f / kFPS);
     ALLEGRO_EVENT_QUEUE *event_queue = al_create_event_queue();

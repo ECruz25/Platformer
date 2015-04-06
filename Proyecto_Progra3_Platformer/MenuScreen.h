@@ -11,6 +11,7 @@ class MenuScreen : public GameScreen
     public:
         MenuScreen();
         ALLEGRO_BITMAP* title[2];
+        ALLEGRO_BITMAP* player[2];
         const int maxFrame = 2;
         int curFrame = 0;
         int frameCount = 0;

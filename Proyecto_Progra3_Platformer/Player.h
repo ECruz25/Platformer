@@ -25,6 +25,7 @@ class Player
         LevelThree* level3;
         ALLEGRO_EVENT event;
         ALLEGRO_BITMAP* image;
+        ALLEGRO_BITMAP* copter[3];
         ALLEGRO_FONT *font;
         InputManager input;
         ALLEGRO_BITMAP* images_derecha[3];

@@ -50,8 +50,9 @@ class LevelTwo : public Levels
         ALLEGRO_BITMAP* floor1;
         ALLEGRO_BITMAP* floor2;
         ALLEGRO_BITMAP* laptop;
+        ALLEGRO_BITMAP* phone[2];
         ALLEGRO_BITMAP* background;
-        ALLEGRO_BITMAP* wifi;
+        ALLEGRO_BITMAP* wifi[3];
         void draw(ALLEGRO_DISPLAY* display);
         bool IsOnSolidGround(int x1, int y1);
         bool TheresRoof(int x1, int y1);
