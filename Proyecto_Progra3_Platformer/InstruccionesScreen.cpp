@@ -12,7 +12,7 @@ InstruccionesScreen::~InstruccionesScreen()
 
 void InstruccionesScreen::LoadContent()
 {
-    background = al_load_bitmap("instrucciones.png");
+    background = al_load_bitmap("assets/instrucciones.png");
 }
 
 void InstruccionesScreen::UnloadContent()

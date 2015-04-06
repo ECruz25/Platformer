@@ -34,11 +34,10 @@ void GameplayScreen::Draw(ALLEGRO_DISPLAY *display)
     }
     else if(player->dead)
     {
-//        UnloadContent();
         ScreenManager::GetInstance().AddScreen(new EndScreen);
     }
     else if(player->win)
     {
-
+        ScreenManager::GetInstance().AddScreen(new WinScreen);
     }
 }

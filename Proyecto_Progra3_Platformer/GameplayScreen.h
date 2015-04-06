@@ -9,6 +9,7 @@
 #include "InputManager.h"
 #include "SplashScreen.h"
 #include "EndScreen.h"
+#include "WinScreen.h"
 #include "Character.h"
 #include "Player.h"
 #include "Floor.h"

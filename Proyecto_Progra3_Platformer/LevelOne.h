@@ -45,6 +45,7 @@ class LevelOne : public Levels
         int laptopy;
         int wifix;
         int wifiy;
+        bool wifion;
         bool can_jump;
         ALLEGRO_BITMAP* floor;
         ALLEGRO_BITMAP* floor1;

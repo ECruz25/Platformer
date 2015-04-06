@@ -10,6 +10,8 @@ Player::Player()
 
     PrintScore();
 
+    score = 0;
+
     images_derecha[0] = al_load_bitmap("assets/Player/run/run/1.png");
     images_derecha[1] = al_load_bitmap("assets/Player/run/run/2.png");
     images_derecha[2] = al_load_bitmap("assets/Player/run/run/3.png");
@@ -29,12 +31,14 @@ Player::Player()
     jumping = false;
     win = false;
     dead = false;
+    wifion = true;
     frame = 0;
     image = al_load_bitmap("assets/Player/standing/1.png");
 }
 
 void Player::draw(ALLEGRO_DISPLAY* display, int level_)
 {
+    AddPoints(level_);
     if(keys[LEFT])
     {
         al_draw_bitmap(images_izquierda[curFrame], x, y, 0);
@@ -47,8 +51,23 @@ void Player::draw(ALLEGRO_DISPLAY* display, int level_)
     {
         al_draw_bitmap(image, x, y, 0);
     }
-
-    if(!dead && !won(level_))
+    if(wifion)
+    {
+        switch(level_)
+        {
+            case 1:
+                al_draw_bitmap(level1->wifi, level1->wifix, level1->wifiy, 0);
+            break;
+            case 2:
+                al_draw_bitmap(level2->wifi, level2->wifix, level2->wifiy, 0);
+            break;
+            case 3:
+                al_draw_bitmap(level3->wifi, level3->wifix, level3->wifiy, 0);
+            break;
+        }
+    }
+    if(won(level_)){}
+    if(!dead)
     {
         if(frame%5==0)
         {
@@ -175,15 +194,12 @@ void Player::draw(ALLEGRO_DISPLAY* display, int level_)
             dead = true;
         }
     }
-    else if(!won(level_))
+    else
     {
-//        Save();
-        cout<<"por accaaaaaaaaaaaa"<<endl;
         dead = true;
     }
     frame++;
 }
-
 
 void Player::Draw()
 {
@@ -191,7 +207,7 @@ void Player::Draw()
 
 void Player::act(ALLEGRO_EVENT ev)
 {
-//    cout<<"("<<x<<","<<y<<")"<<endl;
+    cout<<"("<<x<<","<<y<<")"<<endl;
 
     if(input.IsKeyPressed(ev, ALLEGRO_KEY_SPACE))
     {
@@ -296,9 +312,10 @@ bool Player::won(int level_)
     switch(level_)
     {
         case 1:
-            if(y == level1->laptopy && (x>level1->laptopx-5 && x<level1->laptopx+5))
+            if(y == level1->laptopy && (x>=level1->laptopx-8 && x<=level1->laptopx+8))
             {
-                cout<<"pasar al 2do nivel"<<endl;
+                wifion = true;
+                score += 500;
                 level = 2;
                 y = 540;
                 x = 640;
@@ -307,8 +324,10 @@ bool Player::won(int level_)
             }
         break;
         case 2:
-            if(y == level2->laptopy &&  (x>level2->laptopx-5 && x<level2->laptopx+5))
+            if(y == level2->laptopy &&  (x>=level2->laptopx-8 && x<=level2->laptopx+8))
             {
+                wifion = true;
+                score += 500;
                 level = 3;
                 y = 540;
                 x = 640;
@@ -317,8 +336,9 @@ bool Player::won(int level_)
             }
         break;
         case 3:
-            if(y == level3->laptopy &&  (x>level3->laptopx-5 && x<level3->laptopx+5))
+            if(y == level3->laptopy &&  (x>=level3->laptopx-8&& x<=level3->laptopx+8))
             {
+                score += 500;
                 Save();
                 win = true;
                 return win;
@@ -359,6 +379,34 @@ void Player::PrintScore()
     i>>score2;
     i>>score3;
     i.close();
+}
+
+void Player::AddPoints(int level_)
+{
+    switch(level_)
+    {
+        case 1:
+            if(wifion && y == level1->wifiy && (x>=level1->wifix-10 && x<=level1->wifix+10))
+            {
+                wifion = false;
+                score+=100;
+            }
+        break;
+        case 2:
+            if(wifion && y == level2->wifiy &&  (x>=level2->wifix-10 && x<=level2->wifix+10))
+            {
+                wifion = false;
+                score+=100;
+            }
+        break;
+        case 3:
+            if(wifion && y == level3->wifiy &&  (x>=level3->wifix-10 && x<=level3->wifix+10))
+            {
+                wifion = false;
+                score+=100;
+            }
+        break;
+    }
 }
 
 void Player::UnloadContent()

@@ -49,10 +49,12 @@ LevelOne::LevelOne()
     platform8_top = 290;
     platform8_bottom = 40;
 
-    wifix = 650;
-    wifiy = 40;
-    laptopx = 540;
-    laptopy = 540;
+    wifix = 620;
+    wifiy = 140;
+    laptopx = 650;
+    laptopy = 40;
+
+    wifion = true;
 }
 
 void LevelOne::UnloadContent()
@@ -69,7 +71,6 @@ void LevelOne::draw(ALLEGRO_DISPLAY* display)
 {
     al_draw_bitmap(background, 0, 0, 0);
     al_draw_bitmap(laptop, laptopx, laptopy, 0);
-    al_draw_bitmap(wifi, wifix, wifiy, 0);
     al_draw_bitmap(floor, 450, 368, 0);
     al_draw_bitmap(floor, 622, 268, 0);
     al_draw_bitmap(floor1, -500, 465, 0);

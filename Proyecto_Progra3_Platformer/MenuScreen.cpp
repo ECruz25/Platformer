@@ -2,13 +2,13 @@
 
 MenuScreen::MenuScreen()
 {
-    title[0] = al_load_bitmap("title1.png");
-    title[1] = al_load_bitmap("title2.png");
+    title[0] = al_load_bitmap("assets/title1.png");
+    title[1] = al_load_bitmap("assets/title2.png");
 }
 
 void MenuScreen::LoadContent()
 {
-    menu_background = al_load_bitmap("menu.png");
+    menu_background = al_load_bitmap("assets/menu.png");
 }
 
 void MenuScreen::Draw(ALLEGRO_DISPLAY *display)

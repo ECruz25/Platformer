@@ -42,14 +42,17 @@ class Player
         bool can_jump;
         bool dead;
         bool win;
+        bool wifion;
         const int maxFrame = 3;
         int curFrame = 0;
         int frameCount = 0;
         int frameDelay = 10;
+        int score;
         int score1;
         int score2;
         int score3;
         int dir;
+        void AddPoints(int level);
         void jump();
         enum actions {LEFT, RIGHT};
         bool keys[2] = {false, false};

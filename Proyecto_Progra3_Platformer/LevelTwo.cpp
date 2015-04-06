@@ -44,12 +44,12 @@ LevelTwo::LevelTwo()
     platform7_top = 290;
     platform7_bottom = 140;
 
-    platform8 = 480;
-    platform8_ = 405;
+    platform8 = 215;
+    platform8_ = 315;
     platform8_top = 290;
     platform8_bottom = 40;
 
-    wifix = 650;
+    wifix = 250;
     wifiy = 40;
     laptopx = 620;
     laptopy = 140;
@@ -148,7 +148,7 @@ bool LevelTwo::IsOnSolidGround(int x1, int y1)
     }
     else if(y1 == platform8_bottom)
     {
-        if(x1 > platform8)
+        if(x1 > platform8 && x1 < platform8_)
         {
             can_jump = true;
         }
